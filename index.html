@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/estilos.css">
+        <title>Home</title>
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo_dolce_vita">
+                </div>
+                <ul class="menu">
+                    <li class="item">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="item">
+                        <a href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Productos</a>
+
+                        <ul class="submenu">
+                            <li class="subitem">
+                                <a href="./pages/productos_tortas.html">Tortas</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="./pages/productos_cupcakes.html">Cupcakes</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="#">Galletas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="./pages/contactanos.html">Contáctanos</a>
+                    </li>
+                </ul>
+
+                <section class="menu_iconos">
+                    <div class="item">
+                        <input type="search" placeholder="¿Qué deseas buscar?">
+                        <button class="barra_busqueda boton">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+    
+                    <div class="item usuario">
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="item cart">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </section>
+                
+
+            </nav>
+
+
+            <div class="frase_header home">
+                <h1>"El toque de dulzura que necesitas"</h1>
+            </div>
+
+        </header>
+
+
+        <main>
+            <section class="categorias">
+                <h2>Categorías</h2>
+                <div class="container">
+                    <div class="categorie torta">
+                        <img src="./img/torta_home_categorias.jpg" alt="torta">
+                        <a href="./pages/productos_tortas.html">Tortas</a>
+                    </div>
+                    <div class="categorie cupcake">
+                        <img src="./img/cupcake_home_categorias.jpg" alt="cupcake">
+                        <a href="./pages/productos_cupcakes.html">Cupcakes</a>
+                    </div>
+                    <div class="categorie galleta">
+                        <img src="./img/cookie_home_categorias.jpg" alt="galletas">
+                        <a href="#">Galletas</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="frase_home">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quos.</h2>
+            </section>
+
+            <section class="servicios">
+                <div>
+                    <i class="fa-solid fa-seedling fa-5x"></i>
+                    <h3>Ingredientes frescos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam unde omnis ipsum ipsam eos minima ullam. Asperiores, corporis magni.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hand-holding-heart fa-5x"></i>
+                    <h3>Horneado con amor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam unde omnis ipsum ipsam eos minima ullam. Asperiores, corporis magni.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-truck fa-5x"></i>
+                    <h3>Delivery express</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam unde omnis ipsum ipsam eos minima ullam. Asperiores, corporis magni.</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-credit-card fa-5x"></i>
+                    <h3>Compra fácil y segura</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam unde omnis ipsum ipsam eos minima ullam. Asperiores, corporis magni.</p>
+                </div>
+            </section>
+
+            <section class="equipo home">
+                <div>
+                    <img src="./img/chef_pastelero_home.png" alt="chef_pastelero">
+                    <h4>Chef pastelero</h4>
+                    <h3>Juan Rodríguez</h3>
+                </div>
+                <div>
+                    <img src="./img/decorator_home.jpg" alt="decoradora_pastelera">
+                    <h4>Decoradora</h4>
+                    <h3>Mónica Suarez</h3>
+                </div>
+                <div>
+                    <img src="./img/asistant_home.jpg" alt="asistente_pastelera">
+                    <h4>Asistente</h4>
+                    <h3>Cecilia Pérez</h3>
+                </div>
+            </section>
+
+        </main>
+
+        <section class="suscripcion">
+            <div>
+                <h3>¡Sé parte de nuestra comunidad!</h3>
+                <form>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo aquí" required>
+                    <input type="submit" value="SUSCRIBIR" id="suscribir_button">
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo_dolce_vita">
+            </div>
+
+            <div class="row">
+                <div class="contactos">
+                    <h4>Contactos</h4>
+                    <ul>
+                        <li>
+                            Lorem, ipsum.
+                        </li>
+                        <li>
+                            Lorem, ipsum.
+                        </li>
+                        <li>
+                            Lorem, ipsum.
+                        </li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <h4>Redes sociales</h4>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-square-facebook fa-2x" style="color: white;"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-square-instagram fa-2x" style="color:white"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pagos">
+                    <h4>Medios de pago</h4>
+                    <ul>
+                        <li>
+                            <i class="fa-brands fa-cc-visa fa-2x"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p>Todos los derechos reservados ®</p>
+        </footer>
+    </body>
+</html>

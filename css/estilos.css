@@ -1,0 +1,484 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+P{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: white;
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+/*Header*/
+
+nav{
+    padding: 0;
+    width: 95%;
+    height: 6rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.menu{
+    list-style-type: none;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_iconos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu .item{
+    padding: 0.5rem;
+}
+
+.menu_iconos .item{
+    padding: 0.5rem;
+}
+
+.menu .submenu{
+    list-style-type: none;
+    position: absolute;
+    line-height: 1.5;
+    display: none;
+}
+
+.submenu .subitem{
+    padding: 0.5rem;
+}
+
+.menu .item:hover{
+    text-decoration: underline;
+}
+
+.menu .item:hover .submenu{
+    display: flex;
+    background-color: white;
+}
+
+.menu .item:hover .subitem:hover{
+    text-decoration: underline;
+}
+
+.menu_iconos .item input::placeholder{
+    color:#030303;
+}
+
+.menu_iconos .item input{
+    font-family: 'Playfair Display', serif;
+    padding: 0.2rem;
+    width: 12rem;
+    background-color: #EEEEEE;
+    border: 0px;
+}
+
+.barra_busqueda.boton{
+    background-color: white;
+    border: 0;
+}
+
+/*Frases Header*/
+
+/*Imagen de fondo*/
+.frase_header.home{
+    background-image: url(../img/header_home.jpg);
+}
+
+.frase_header.nosotros{
+    background-image: url(../img/header_nosotros.jpg);
+}
+
+.frase_header.contactanos{
+    background-image: url(../img/header_contactanos.jpg);
+}
+
+.frase_header.p_tortas{
+    background-image: url(../img/header_tortas.jpg);
+}
+
+.frase_header.p_cupcakes{
+    background-image:url(../img/header_cupcakes.jpg);
+}
+
+.frase_header{
+    height:35rem;
+    width: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+/*Texto*/
+
+/*Home*/
+.frase_header.home{
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.frase_header.home h1{
+    font-weight: lighter;
+    background-color: #ffffffbd;
+    height: 6rem;
+    width: 20rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+/*Pages*/
+.frase_header.nosotros, .frase_header.contactanos, .frase_header.p_tortas, .frase_header.p_cupcakes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-style: italic;
+}
+
+.frase_header.nosotros h1, .frase_header.p_tortas h1{
+    background-color: #ffffff69;
+    height: 3rem;
+    width: 19rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase_header.contactanos h1, .frase_header.frase_header.p_cupcakes h1{
+    background-color: #0000005a;
+    height: 3rem;
+    width: 19rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*HOME*/
+
+/*Body*/
+
+/*Categorias*/
+
+.categorias img
+{
+    width: 16rem;
+    height: 20rem;
+    padding: 0.5rem;
+}
+
+.categorias h2{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/*Frase*/
+
+.frase_home{
+    background-image: url(../img/tabla_madera.jpg);
+    width: 95%;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase_home h2{
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+/*Servicios*/
+
+.servicios, .servicios i, .servicios h3{
+    padding: 0.5rem;
+}
+
+.servicios p{
+    font-family: 'Inter', sans-serif;
+    padding: 0.5rem;
+}
+
+/*Equipo*/
+
+.equipo img{
+    width: 16rem;
+    height: 20rem;
+    padding: 0.5rem;
+}
+
+.equipo h4{
+    color:#4F4F4F;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    padding: 0.5rem;
+}
+
+.equipo h3, .equipo p{
+    padding: 0.5rem;
+}
+
+/*NOSOTROS*/
+
+.nosotros_description{
+    width: 95%;
+    margin: auto;
+}
+
+.nosotros_description, .nosotros_description div{
+    padding: 0.5rem;
+}
+
+.nosotros_description img{
+    display: flex;
+    justify-content: center;
+}
+
+.equipo.nosotros h2{
+    text-align: center;
+}
+
+/*CONTÁCTANOS*/
+
+.formulario, .formulario h2, .informacion ul, .informacion h2{
+    padding: 0.5rem;
+}
+
+.formulario label, .informacion li{
+    font-family: 'Inter', sans-serif;
+}
+
+#nombre, #email, #comentario {
+    background-color: #EEEEEE;
+    border: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/*PRODUCTOS*/
+
+/*Filtro*/
+
+.filtro, .container_productos, .filtro h3, .filtro h4, .filtro ul{
+    padding: 0.5rem;
+}
+
+#precio_minimo::placeholder, #precio_maximo::placeholder{
+    font-family: 'Playfair Display', serif;
+    background-color: #EEEEEE;
+    border: 0;
+    height: 1.7rem;
+    width: 6.5rem;
+}
+
+#precio_minimo, #precio_maximo{
+    font-family: 'Inter', sans-serif;
+    background-color: #EEEEEE;
+    border: 0;
+    height: 1.7rem;
+    width: 6.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+/*Container*/
+
+.product{
+    padding: 0.5rem;
+}
+
+/*Imagen*/
+
+.product img{
+    width: 15rem;
+    height: 17rem;
+}
+
+/*Información*/
+
+.info_product{
+    line-height: 1.5;
+}
+
+.precio_product{
+    color: #5A2A27;
+    font-weight: 900;
+}
+
+/*Next page*/
+
+.pages{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.pages button, #numero_pagina{
+    background-color: white;
+    border: 0;
+    padding-inline: 0.7rem;
+}
+
+#numero_pagina{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    border: 1px solid black;
+    text-align: right;
+    padding: 0.2rem;
+    width: 3rem;
+}
+
+/*BOTONES*/
+
+#enviar_button, #suscribir_button{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 0.2rem;
+    width: 5.5rem;
+    font-size: 0.75rem;
+}
+
+/*Añadir al carrito*/
+
+.info_product button{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    padding: 0.2rem;
+    width: 9rem;
+    height: 2.15rem;
+    font-size: 0.75rem;
+}
+
+/*SUSCRIPCIÓN*/
+
+.suscripcion{
+    background-image: url(../img/suscripcion.jpg);
+    width: 95%;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscripcion form, .suscripcion h3{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.suscripcion #correo{
+    font-family: 'Playfair Display', serif;
+    padding: 0.2rem;
+    width: 20rem;
+    background-color: #EEEEEE;
+    border: 0px;
+}
+
+.suscripcion #correo::placeholder{
+    color:#030303
+}
+
+/*Footer*/
+
+footer{
+    background-color: #5A2A27;
+    border-radius: 8px;
+    width: 95%;
+    height: 18rem;
+    margin: auto;
+    line-height: 1.5;
+}
+
+footer .logo{
+    padding: 0.5rem;
+}
+
+footer .contactos h4, footer .redes h4, footer .pagos h4, footer p{
+    color: #C1C1C1;
+    padding-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+footer ul{
+    list-style-type: none;
+    color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.row div{
+    padding-inline: 2rem;
+}
+
+.redes ul, .pagos ul{
+    display: flex;
+}
+
+.redes ul li, .pagos ul li{
+    padding-inline: 0.5rem;
+}
+
+footer p{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    bottom: auto;
+}
