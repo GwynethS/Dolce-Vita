@@ -23,6 +23,10 @@ body{
     color: black;
 }
 
+h3{
+    font-size: 1.3rem;
+}
+
 /*Header*/
 
 .hamburguer{
@@ -457,7 +461,7 @@ nav .iconos{
 }
 
 .suscripcion #correo::placeholder{
-    color:#030303
+    color:#030303;
 }
 
 /*Footer*/
@@ -628,6 +632,30 @@ footer p{
 
     .menu .item:hover .submenu{
         background-color: #EEEEEE;
+    }
+
+    /*SUSCRIPCIÓN*/
+
+    .suscripcion{
+        height: 13rem;
+        flex-direction: column;
+    }
+
+    .suscripcion h3{
+        position: relative;
+        top: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .suscripcion form{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2.3rem;
+    }
+
+    .suscripcion #correo{
+        width: 25rem;
+        margin-bottom: 1rem;
     }
 
 
