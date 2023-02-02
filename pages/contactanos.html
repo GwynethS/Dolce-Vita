@@ -21,52 +21,55 @@
                 <div class="logo">
                     <a href="../index.html"><img src="../img/logo.png" alt="logo_dolce_vita"></a>
                 </div>
-                <ul class="menu">
-                    <li class="item">
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li class="item">
-                        <a href="../pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="item">
-                        <a href="#">Productos</a>
-
-                        <ul class="submenu">
-                            <li class="subitem">
-                                <a href="../pages/productos_tortas.html">Tortas</a>
-                            </li>
-                            <li class="subitem">
-                                <a href="../pages/productos_cupcakes.html">Cupcakes</a>
-                            </li>
-                            <li class="subitem">
-                                <a href="#">Galletas</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="item">
-                        <a href="../pages/contactanos.html">Contáctanos</a>
-                    </li>
-                </ul>
-
-                <section class="menu_iconos">
-                    <div class="item">
-                        <input type="search" placeholder="¿Qué deseas buscar?">
-                        <button class="barra_busqueda boton" style="cursor:pointer">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
+                <div class="menu">
+                    <ul>
+                        <li class="item">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">Productos</a>
     
+                            <ul class="submenu">
+                                <li class="subitem">
+                                    <a href="../pages/productos_tortas.html">Tortas</a>
+                                </li>
+                                <li class="subitem">
+                                    <a href="../pages/productos_cupcakes.html">Cupcakes</a>
+                                </li>
+                                <li class="subitem">
+                                    <a href="#">Galletas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/contactanos.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hamburguer">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
+
+                <div class="item busqueda">
+                    <input type="search" placeholder="¿Qué deseas buscar?">
+                    <button class="barra_busqueda boton" style="cursor:pointer">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="iconos">
                     <div class="item usuario">
                         <a href="#"><i class="fa-solid fa-user"></i></a>
                     </div>
                     <div class="item cart">
                         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
-                </section>
-                
-
+                </div>
             </nav>
-
 
             <div class="frase_header contactanos">
                 <h1>Contáctanos</h1>
@@ -161,9 +164,13 @@
                     </ul>
                 </div>
             </div>
-           
             <p>Todos los derechos reservados ®</p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script>
+            const menuHamburger = document.querySelector(".hamburguer")
+            const navLinks = document.querySelector(".menu")
+            menuHamburger.addEventListener('click',()=>{ navLinks.classList.toggle('mobile-menu')})
+        </script>
     </body>
 </html>

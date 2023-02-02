@@ -25,14 +25,26 @@ body{
 
 /*Header*/
 
+.hamburguer{
+    display: none;
+}
+
 nav{
     padding: 0;
     width: 95%;
     height: 6rem;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid; 
+    grid-template-columns: 1.3fr 12fr 5fr 1.4fr; 
+    grid-template-rows: 96px; 
+    gap: 2px;
     align-items: center;
+    grid-template-areas: 
+    "logo menu busqueda iconos"
+}
+
+nav .logo{
+    grid-area: logo;
 }
 
 .logo img{
@@ -41,16 +53,20 @@ nav{
 }
 
 .menu{
-    margin: 0;
+    grid-area: menu;
     list-style-type: none;
     padding: 0.5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
 }
 
-.menu_iconos{
+.menu ul{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .iconos{
+    grid-area: iconos;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,11 +74,17 @@ nav{
 
 .menu .item{
     padding: 0.5rem;
-    font-size: 0.95rem;
 }
 
-.menu_iconos .item{
+.item.busqueda{
     padding: 0.5rem;
+    grid-area: busqueda;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item.busqueda button{
+    margin-left: 0.5rem;
 }
 
 .menu .submenu{
@@ -93,7 +115,7 @@ nav{
     color:#030303;
 }
 
-.menu_iconos .item input{
+.item.busqueda input{
     font-family: 'Playfair Display', serif;
     font-size: 0.85rem;
     padding: 0.2rem;
@@ -489,4 +511,117 @@ footer p{
     font-size: 0.8rem;
     padding: 1.5rem;
     bottom: auto;
+}
+
+@media screen and (max-width: 768px)
+{
+
+    /*NAVBAR*/
+
+    nav{
+        height: 9rem;
+        display: grid; 
+        grid-template-columns: 1fr 5fr 2fr; 
+        grid-template-rows: 1fr 0.5fr; 
+        gap: 2px; 
+        grid-template-areas: 
+        "hamburguer logo iconos"
+        "busqueda busqueda busqueda";
+    }
+
+    .hamburguer{
+        grid-area: hamburguer;
+        display: block;
+        position: relative;
+        margin-left: 0.5rem;
+    }
+
+    nav .logo img{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    nav .logo{
+        grid-area: logo;
+        justify-self: flex-start;
+    }
+
+    .item.busqueda{
+        grid-area: busqueda;
+        justify-content: flex-end;
+    }
+
+    .iconos{
+        justify-self: flex-end;
+    }
+
+    .item.usuario{
+        margin: 0.5rem;
+        transform: scale(1.5, 1.5);
+    }
+    
+    .item.cart{
+        margin: 1rem;
+        transform: scale(1.5, 1.5);
+    }
+
+    .item.busqueda input{
+        font-family: 'Playfair Display', serif;
+        padding: 0.2rem;
+        width: 70%;
+        height: 2rem;
+        background-color: #EEEEEE;
+        border: 0px;
+    }
+
+    /*Sidebar Menu*/
+
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #EEEEEE;
+        width: 30%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-left:-100%;
+    }
+
+    .menu.mobile-menu{
+        margin-left: 0;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul .item{
+        margin: 1.5rem;
+    }
+
+    .menu .submenu{
+        position: absolute;
+        left: 30vw;
+        top: 30%;
+        width: 20vw;;
+        height: 50vh;
+    }
+
+    .menu .item{
+        text-align: center;
+        width: 30vw;
+    }
+
+    .submenu .subitem{
+        margin: 1rem;
+    }
+
+    .menu .item:hover .submenu{
+        background-color: #EEEEEE;
+    }
 }
