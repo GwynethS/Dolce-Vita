@@ -469,6 +469,7 @@ footer{
     height: 18rem;
     margin: auto;
     line-height: 1.5;
+    margin-bottom: 1.5rem;
 }
 
 footer .logo{
@@ -479,25 +480,29 @@ footer .contactos h4, footer .redes h4, footer .pagos h4, footer p{
     color: #C1C1C1;
     padding-bottom: 0.5rem;
     font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+footer .contactos h4, footer .redes h4, footer .pagos h4{
+    font-size: 1rem;
 }
 
 footer ul{
     list-style-type: none;
     color: white;
+    text-align: start;
+    padding: 0;
 }
 
-.row{
+footer .row.info{
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
 }
 
-.row div{
-    padding-inline: 2rem;
-}
-
 .redes ul, .pagos ul{
     display: flex;
+    justify-content: center;
 }
 
 .redes ul li, .pagos ul li{
@@ -509,8 +514,6 @@ footer p{
     text-align: center;
     font-style: normal;
     font-size: 0.8rem;
-    padding: 1.5rem;
-    bottom: auto;
 }
 
 
@@ -625,5 +628,51 @@ footer p{
 
     .menu .item:hover .submenu{
         background-color: #EEEEEE;
+    }
+
+
+    /*FOOTER*/
+    footer{
+        background-color: #5A2A27;
+        border-radius: 8px;
+        width: 95%;
+        height: 28rem;
+        margin: auto;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    
+    footer .logo img{
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    footer .contactos h4, footer .redes h4, footer .pagos h4, footer p{
+        color: #C1C1C1;
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+        font-family: 'Inter', sans-serif;
+        text-align: start;
+    }
+    
+    footer .contactos h4, footer .redes h4, footer .pagos h4{
+        font-size: 1rem;
+    }
+    
+    footer ul{
+        list-style-type: none;
+        color: white;
+        text-align: start;
+        padding-left: 1rem;
+    }
+    
+    .redes ul, .pagos ul{
+        display: flex;
+        justify-content: start;
+    }
+    
+    footer p{
+        text-align: center;
+        font-size: 0.9rem;
     }
 }
