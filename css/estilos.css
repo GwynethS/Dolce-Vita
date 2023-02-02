@@ -41,11 +41,13 @@ nav{
 }
 
 .menu{
+    margin: 0;
     list-style-type: none;
     padding: 0.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .menu_iconos{
@@ -56,6 +58,7 @@ nav{
 
 .menu .item{
     padding: 0.5rem;
+    font-size: 0.95rem;
 }
 
 .menu_iconos .item{
@@ -92,6 +95,7 @@ nav{
 
 .menu_iconos .item input{
     font-family: 'Playfair Display', serif;
+    font-size: 0.85rem;
     padding: 0.2rem;
     width: 12rem;
     background-color: #EEEEEE;
@@ -134,6 +138,10 @@ nav{
     background-size: cover;
     margin: auto;
     border-radius: 0.5rem;
+}
+
+.frase_header h1{
+    font-size: 2rem;
 }
 
 /*Texto*/
