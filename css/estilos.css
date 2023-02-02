@@ -34,6 +34,11 @@ h3{
 }
 
 nav{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 2.5%;
+    z-index: 2;
     padding: 0;
     width: 95%;
     height: 6rem;
@@ -157,7 +162,7 @@ nav .iconos{
 }
 
 .frase_header{
-    height:35rem;
+    height:38rem;
     width: 95%;
     background-repeat: no-repeat;
     background-position: center;
@@ -543,6 +548,7 @@ footer p{
         display: block;
         position: relative;
         margin-left: 0.5rem;
+        z-index: 3;
     }
 
     nav .logo img{
@@ -597,6 +603,7 @@ footer p{
         align-items: center;
 
         margin-left:-100%;
+        z-index: 2;
     }
 
     .menu.mobile-menu{
@@ -619,6 +626,7 @@ footer p{
         top: 30%;
         width: 30vw;;
         height: 50vh;
+        z-index: 2;
     }
 
     .menu .item{
@@ -632,6 +640,30 @@ footer p{
 
     .menu .item:hover .submenu{
         background-color: #EEEEEE;
+    }
+
+    /*FRASE HEADER*/
+    /* img */
+    .frase_header{
+        height:32rem;
+    }
+    
+    .frase_header h1{
+        font-size: 1.7rem;
+    }
+
+    /*Texto*/
+
+    .frase_header.home h1{
+        height: 5rem;
+        width: 16rem;
+    }
+    
+    /*Pages*/
+    
+    .frase_header.nosotros h1, .frase_header.p_tortas h1, .frase_header.contactanos h1, .frase_header.p_cupcakes h1{
+        height: 2.7rem;
+        width: 12rem;
     }
 
     /*SUSCRIPCIÓN*/
