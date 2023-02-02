@@ -513,6 +513,8 @@ footer p{
     bottom: auto;
 }
 
+
+
 @media screen and (max-width: 768px)
 {
 
@@ -581,7 +583,7 @@ footer p{
         top: 0;
         left: 0;
         background-color: #EEEEEE;
-        width: 30%;
+        width: 30vw;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -608,7 +610,7 @@ footer p{
         position: absolute;
         left: 30vw;
         top: 30%;
-        width: 20vw;;
+        width: 30vw;;
         height: 50vh;
     }
 
