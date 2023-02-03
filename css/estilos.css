@@ -572,6 +572,7 @@ nav .iconos{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .pages button, #numero_pagina{
