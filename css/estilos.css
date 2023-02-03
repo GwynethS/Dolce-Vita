@@ -280,6 +280,8 @@ nav .iconos{
     background-position: center;
     background-size: cover;
     margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
@@ -303,6 +305,7 @@ nav .iconos{
     width: 95%;
     margin: auto;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .servicios .tarjeta{
@@ -336,10 +339,29 @@ nav .iconos{
 
 /*Equipo*/
 
+.equipo.home .row{
+    width: 95%;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.equipo.home .person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.equipo.home h2{
+    margin-bottom: 2rem;
+}
+
 .equipo img{
-    width: 16rem;
-    height: 20rem;
-    padding: 0.5rem;
+    width: 12rem;
+    height: 15rem;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
 }
 
 .equipo h4{
@@ -349,7 +371,7 @@ nav .iconos{
     padding: 0.5rem;
 }
 
-.equipo h3, .equipo p{
+.equipo p{
     padding: 0.5rem;
 }
 
@@ -497,6 +519,7 @@ nav .iconos{
     background-position: center;
     background-size: cover;
     margin: auto;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     display: flex;
@@ -719,6 +742,8 @@ footer p{
         width: 12rem;
     }
 
+    /*------HOME-------*/
+
     /*CATEGORÍAS*/
 
     .categorias img
@@ -736,6 +761,13 @@ footer p{
     
     .servicios .tarjeta.delivery{
         background-color: #CFA89D;
+    }
+
+    /*EQUIPO*/
+
+    .equipo.home img{
+        width: 9rem;
+        height: 12rem;
     }
 
     /*SUSCRIPCIÓN*/
@@ -810,6 +842,9 @@ footer p{
 }
 
 @media screen and (max-width: 576px){
+
+    /*------HOME-------*/
+
     /*CATEGORÍAS*/
 
     .categorias img
@@ -817,4 +852,23 @@ footer p{
         width: 7rem;
         height: 9rem;
     }
+
+    /*SERVICIOS*/
+
+    .servicios .tarjeta.fresh, .servicios .tarjeta.delivery{
+        border: solid 2.5px #CFA89D;
+        background-color: white;
+    }
+    
+    .servicios .tarjeta.love, .servicios .tarjeta.cardd{
+        background-color: #CFA89D;
+    }
+
+    /*EQUIPO*/
+
+    .equipo.home img{
+        width: 8rem;
+        height: 11rem;
+    }
+
 }
