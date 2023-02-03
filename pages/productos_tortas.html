@@ -19,11 +19,52 @@
 
         <header>
             <nav>
+                <div class="side_menu">
+                    <button class="hamburguer btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars fa-2x"></i></button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <button class="btn" type="button"  data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-bars fa-2x"></i></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="menu_lat">
+                                <li class="item">
+                                    <a href="../index.html">Home</a>
+                                </li>
+                                <li class="item">
+                                    <a href="../pages/nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="item">
+                                    <div class="dropdown mt-3">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        Productos
+                                        </button>
+                                        <ul class="submenu dropdown-menu">
+                                            <li class="subitem">
+                                                <a class="dropdown-item" href="../pages/productos_tortas.html">Pasteles</a>
+                                            </li>
+                                            <li class="subitem">
+                                                <a class="dropdown-item" href="../pages/productos_cupcakes.html">Cupcakes</a>
+                                            </li>
+                                            <li class="subitem">
+                                                <a class="dropdown-item" href="#">Galletas</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <a href="../pages/contactanos.html">Contáctanos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="logo">
                     <a href="../index.html"><img src="../img/logo.png" alt="logo_dolce_vita"></a>
                 </div>
                 <div class="menu">
-                    <ul>
+                    <ul class="lista">
                         <li class="item">
                             <a href="../index.html">Home</a>
                         </li>
@@ -31,19 +72,22 @@
                             <a href="../pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="item">
-                            <a href="#">Productos</a>
-    
-                            <ul class="submenu">
-                                <li class="subitem">
-                                    <a href="../pages/productos_tortas.html">Pasteles</a>
-                                </li>
-                                <li class="subitem">
-                                    <a href="../pages/productos_cupcakes.html">Cupcakes</a>
-                                </li>
-                                <li class="subitem">
-                                    <a href="#">Galletas</a>
-                                </li>
-                            </ul>
+                            <div class="dropdown mt-3">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Productos
+                                </button>
+                                <ul class="submenu dropdown-menu">
+                                    <li class="subitem">
+                                        <a class="dropdown-item" href="../pages/productos_tortas.html">Pasteles</a>
+                                    </li>
+                                    <li class="subitem">
+                                        <a class="dropdown-item" href="../pages/productos_cupcakes.html">Cupcakes</a>
+                                    </li>
+                                    <li class="subitem">
+                                        <a class="dropdown-item" href="#">Galletas</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="item">
                             <a href="../pages/contactanos.html">Contáctanos</a>
@@ -51,9 +95,6 @@
                     </ul>
                 </div>
 
-                <div class="hamburguer">
-                    <i class="fa-solid fa-bars fa-2x"></i>
-                </div>
 
                 <div class="item busqueda">
                     <input type="search" placeholder="¿Qué deseas buscar?">
@@ -351,10 +392,5 @@
             AOS.init();
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <script>
-            const menuHamburger = document.querySelector(".hamburguer")
-            const navLinks = document.querySelector(".menu")
-            menuHamburger.addEventListener('click',()=>{ navLinks.classList.toggle('mobile-menu')})
-        </script>
     </body>
 </html>

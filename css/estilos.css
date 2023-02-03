@@ -79,7 +79,7 @@ nav .logo{
     padding: 0.5rem;
 }
 
-.menu ul{
+.menu .lista{
     margin: 0;
     display: flex;
     justify-content: center;
@@ -109,27 +109,30 @@ nav .iconos{
 }
 
 .menu .submenu{
-    list-style-type: none;
-    position: absolute;
-    line-height: 1.5;
-    display: none;
-}
-
-.submenu .subitem{
-    padding: 0.5rem;
+    line-height: 2rem;
 }
 
 .menu .item:hover{
     text-decoration: underline;
 }
 
-.menu .item:hover .submenu{
-    display: flex;
-    background-color: white;
+.menu .item button:hover{
+    text-decoration: underline;
 }
 
-.menu .item:hover .subitem:hover{
+.menu .item button{
+    position: relative;
+    bottom:8px;
+}
+
+.menu .dropdown-menu{
+    background-color: white;
+    border: none;
+}
+
+.menu .dropdown-menu .dropdown-item:hover{
     text-decoration: underline;
+    background-color: white;
 }
 
 .menu_iconos .item input::placeholder{
@@ -742,7 +745,6 @@ footer p{
         display: block;
         position: relative;
         margin-left: 0.5rem;
-        z-index: 3;
     }
 
     nav .logo img{
@@ -786,53 +788,33 @@ footer p{
     /*Sidebar Menu*/
 
     .menu{
-        position: absolute;
-        top: 0;
-        left: 0;
+        display: none;
+    }
+
+    .side_menu .offcanvas{
         background-color: #EEEEEE;
-        width: 30vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        margin-left:-100%;
-        z-index: 2;
     }
 
-    .menu.mobile-menu{
-        margin-left: 0;
+    .side_menu .offcanvas-body .menu_lat{
+        line-height: 5rem;
     }
 
-    .menu ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .side_menu .offcanvas-body .item:hover, .side_menu .offcanvas-body .subitem:hover, .side_menu .offcanvas-body .item button:hover{
+        text-decoration: underline;
     }
 
-    .menu ul .item{
-        margin: 1.5rem;
+    .side_menu .offcanvas-body .item button
+    {
+        position: relative;
+        right: 11px;
     }
 
-    .menu .submenu{
-        position: absolute;
-        left: 30vw;
-        top: 30%;
-        width: 30vw;;
-        height: 50vh;
-        z-index: 2;
+    .side_menu .offcanvas-body .dropdown-menu{
+        background-color: #EEEEEE;
+        border: none;
     }
 
-    .menu .item{
-        text-align: center;
-        width: 30vw;
-    }
-
-    .submenu .subitem{
-        margin: 1rem;
-    }
-
-    .menu .item:hover .submenu{
+    .side_menu .offcanvas-body .dropdown-menu .dropdown-item:hover{
         background-color: #EEEEEE;
     }
 
