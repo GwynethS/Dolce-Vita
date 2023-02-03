@@ -427,16 +427,31 @@ nav .iconos{
     border: solid 2px #CFA89D;
 }
 
+.equipo.nosotros .chef{
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.equipo.nosotros .asist{
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
 .equipo.nosotros .decoradora{
     border-left: 0 ;
     border-right: 0;
+}
+
+.equipo.nosotros .info{
+    width: 100%;
+    background-color: #e8c9c0c6;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .equipo.nosotros h3, .equipo.nosotros h4{
     text-align: center;
 }
 
-.equipo.nosotros p{
+.equipo.nosotros .info p{
     padding: 0.5rem;
 }
 
@@ -856,11 +871,33 @@ footer p{
     .equipo.nosotros .person{
         display: flex;
         flex-direction: row;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+    }
+
+    .equipo.nosotros .decoradora .tarjeta{
+        order: 1;
+    }
+
+    .equipo.nosotros .chef .info, .equipo.nosotros .asist .info{
+        height: 92%;
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+    }
+
+    .equipo.nosotros .decoradora .info{
+        height: 92%;
+        margin-top: 0.5rem;
+        margin-right: 2rem;
+    }
+
+    .equipo.nosotros .person .info{
+        display: flex;
+        align-items: center;
     }
 
     .equipo.nosotros .decoradora{
-        border: solid 2px #CFA89D;;
+        border: solid 2px #CFA89D;
     }
 
     .equipo.nosotros h3{
