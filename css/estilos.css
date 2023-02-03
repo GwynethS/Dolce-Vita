@@ -23,8 +23,20 @@ body{
     color: black;
 }
 
+h1{
+    font-size: 1.7rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
 h3{
     font-size: 1.3rem;
+}
+
+h4{
+    font-size: 1.1rem;
 }
 
 /*Header*/
@@ -231,11 +243,26 @@ nav .iconos{
 
 /*Categorias*/
 
+.categorias .row{
+    width: 95%;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.categorias .categorie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .categorias img
 {
-    width: 16rem;
-    height: 20rem;
-    padding: 0.5rem;
+    width: 13rem;
+    height: 18rem;
+    margin: 0.5rem auto;
+    border-radius: 8px;
 }
 
 .categorias h2{
@@ -666,6 +693,14 @@ footer p{
         width: 12rem;
     }
 
+    /*CATEGORÍAS*/
+
+    .categorias img
+    {
+        width: 10rem;
+        height: 12rem;
+    }
+
     /*SUSCRIPCIÓN*/
 
     .suscripcion{
@@ -734,5 +769,15 @@ footer p{
     footer p{
         text-align: center;
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    /*CATEGORÍAS*/
+
+    .categorias img
+    {
+        width: 7rem;
+        height: 9rem;
     }
 }
