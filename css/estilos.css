@@ -498,6 +498,16 @@ nav .iconos{
 
 /*PRODUCTOS*/
 
+.filtro_boton{
+    display: none;
+}
+
+.container_venta{
+    width: 95%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
 /*Filtro*/
 
 .filtro, .container_productos, .filtro h3, .filtro h4, .filtro ul{
@@ -522,22 +532,32 @@ nav .iconos{
     margin: 0.5rem;
 }
 
-/*Container*/
+/*Container_Productos*/
+
+.container_productos{
+    margin: auto;
+}
 
 .product{
     padding: 0.5rem;
+    border: solid white 4px;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*Imagen*/
 
 .product img{
-    width: 15rem;
-    height: 17rem;
+    width: 10rem;
+    height: 12rem;
 }
 
 /*Información*/
 
 .info_product{
+    margin-top: 0.5rem;
     line-height: 1.5;
 }
 
@@ -548,10 +568,11 @@ nav .iconos{
 
 /*Next page*/
 
-.pages{
+.container_productos .pages{
     padding: 0.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .pages button, #numero_pagina{
@@ -570,6 +591,15 @@ nav .iconos{
 }
 
 /*BOTONES*/
+
+#filtrar_button{
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: white;
+}
 
 #enviar_button, #suscribir_button{
     font-family: 'Inter', sans-serif;
@@ -906,6 +936,41 @@ footer p{
 
     .equipo.nosotros p{
         margin: 1rem;
+    }
+
+    /*-----Productos------*/
+
+    .filtro_boton{
+        display: block;
+    }
+
+    .container_venta .filtro{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #EEEEEE;
+        width: 30vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        margin-right:-100%;
+        z-index: 2;
+    }
+
+    .filtro.mobile-menu{
+        margin-right: 0;
+    }
+
+    #precio_minimo::placeholder, #precio_maximo::placeholder{
+        color:#343434;
+        background-color: white;
+    }
+    
+    #precio_minimo, #precio_maximo{
+        background-color: white;
     }
 
     /*SUSCRIPCIÓN*/
