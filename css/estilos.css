@@ -189,7 +189,8 @@ nav .iconos{
 
 /*Texto*/
 
-/*Home*/
+/*----Home-----*/
+
 .frase_header.home{
     font-style: italic;
     display: flex;
@@ -395,13 +396,30 @@ nav .iconos{
     text-align: center;
 }
 
-/*CONTÁCTANOS*/
+/*-----CONTÁCTANOS------*/
 
-.formulario, .formulario h2, .informacion ul, .informacion h2{
+.contactanos{
+    width: 95%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.contactanos form{
+    display: flex;
+    flex-direction: column;
     padding: 0.5rem;
 }
 
-.formulario label, .informacion li{
+.contactanos .formulario label{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.informacion ul{
+    padding: 0.5rem;
+}
+
+.contactanos .formulario label,.contactanos .informacion li{
     font-family: 'Inter', sans-serif;
 }
 
@@ -409,6 +427,14 @@ nav .iconos{
     background-color: #EEEEEE;
     border: 0;
     font-family: 'Inter', sans-serif;
+}
+
+#nombre, #email{
+    height: 2.5rem;
+}
+
+#comentario{
+    resize: none;
 }
 
 /*PRODUCTOS*/
@@ -494,6 +520,11 @@ nav .iconos{
     padding: 0.2rem;
     width: 5.5rem;
     font-size: 0.75rem;
+}
+
+#enviar_button{
+    margin: auto;
+    margin-top: 1rem;
 }
 
 /*Añadir al carrito*/
