@@ -498,10 +498,6 @@ nav .iconos{
 
 /*PRODUCTOS*/
 
-.filtro_boton{
-    display: none;
-}
-
 .container_venta{
     width: 95%;
     margin: auto;
@@ -599,6 +595,9 @@ nav .iconos{
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     background-color: white;
+    border: black solid 2px;
+    border-radius: 0;
+    display: none;
 }
 
 #enviar_button, #suscribir_button{
@@ -673,7 +672,6 @@ footer{
     width: 95%;
     height: 18rem;
     margin: auto;
-    line-height: 1.5;
     margin-bottom: 1.5rem;
 }
 
@@ -940,37 +938,31 @@ footer p{
 
     /*-----Productos------*/
 
-    .filtro_boton{
+    .filtro{
+        display: none;
+    }
+
+    #filtrar_button{
         display: block;
     }
 
-    .container_venta .filtro{
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #EEEEEE;
-        width: 30vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-
-        margin-right:-100%;
-        z-index: 2;
-    }
-
-    .filtro.mobile-menu{
-        margin-right: 0;
-    }
-
-    #precio_minimo::placeholder, #precio_maximo::placeholder{
-        color:#343434;
+    .container_venta .offcanvas{
         background-color: white;
     }
-    
-    #precio_minimo, #precio_maximo{
-        background-color: white;
+
+    .container_venta .offcanvas-body ul{
+        margin: 0;
+        padding: 0.5rem;
+        text-align: start;
+        line-height: 2.5;
+    }
+
+    .container_venta .offcanvas-body .f_porciones h4, .container_venta .offcanvas-body .f_unidades h4{
+        margin-top: 2rem;
+    }
+
+    .container_venta .offcanvas-body .f_precio h4, .container_venta .offcanvas-body .f_unidades h4{
+        margin-bottom: 1.5rem;
     }
 
     /*SUSCRIPCIÓN*/
@@ -1005,7 +997,6 @@ footer p{
         width: 95%;
         height: 28rem;
         margin: auto;
-        line-height: 1.5;
         margin-bottom: 1.5rem;
     }
     

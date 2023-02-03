@@ -82,162 +82,206 @@
 
         <main>
 
-            <div class="filtro">
-                <h3>Filtrar por</h3>
-                <div class="f_precio">
-                    <h4>Precio</h4>
-                    <input type="number" id="precio_minimo" placeholder="Mínimo">
-                    <input type="number" id="precio_maximo" placeholder="Máximo">
-                </div>
-
-                <div class="f_unidades">
-                    <h4>Unidades</h4>
-                    <ul>
-                        <li>
-                            <input type="checkbox" id="opcion1" name="unidades">
-                            <label for="opcion1">Lorem, ipsum.</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="opcion2" name="unidades">
-                            <label for="opcion2">Lorem, ipsum.</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="opcion3" name="unidades">
-                            <label for="opcion3">Lorem, ipsum.</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="opcion4" name="unidades">
-                            <label for="opcion4">Lorem, ipsum.</label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="container_productos">
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+            <div class="container_venta row">
+                <div class="side_filter">
+                    <button class="btn" id="filtrar_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasExample">
+                        Filtrar  <i class="fa-solid fa-filter"></i>
+                    </button>
+                    
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filtrar por</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="f_precio">
+                                <h4>Precio</h4>
+                                <input type="number" id="precio_minimo" placeholder="Mínimo">
+                                <input type="number" id="precio_maximo" placeholder="Máximo">
+                            </div>
+            
+                            <div class="f_unidades">
+                                <h4>Unidades</h4>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="opcion1" name="porcion">
+                                        <label for="opcion1">Lorem, ipsum.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="opcion2" name="porcion">
+                                        <label for="opcion2">Lorem, ipsum.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="opcion3" name="porcion">
+                                        <label for="opcion3">Lorem, ipsum.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="opcion4" name="porcion">
+                                        <label for="opcion4">Lorem, ipsum.</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
 
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+                <div class="filtro col-3">
+                    <h3>Filtrar por</h3>
+                    <div class="f_precio">
+                        <h4>Precio</h4>
+                        <input type="number" id="precio_minimo" placeholder="Mínimo">
+                        <input type="number" id="precio_maximo" placeholder="Máximo">
+                    </div>
+    
+                    <div class="f_unidades">
+                        <h4>Unidades</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="opcion1" name="unidades">
+                                <label for="opcion1">Lorem, ipsum.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="opcion2" name="unidades">
+                                <label for="opcion2">Lorem, ipsum.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="opcion3" name="unidades">
+                                <label for="opcion3">Lorem, ipsum.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="opcion4" name="unidades">
+                                <label for="opcion4">Lorem, ipsum.</label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+    
+                <div class="container_productos col-md-9 col-sm-12 row">
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
-
-                    <div class="info_product">
-                        <h4>Cupcake de vainilla</h4>
-                        <p class="tamanio_porcion">6 unidades</p>
-                        <p class="precio_product">s/.35.00</p>
-                        <button>AÑADIR AL CARRITO</button>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
                     </div>
-                </div>
-                <div class="pages">
-                    <button><i class="fa-solid fa-caret-left"></i></button>
-                    <input type="number" id="numero_pagina" value="1">
-                    <button><i class="fa-solid fa-caret-right"></i></button>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+                    <div class="product col-lg-3 col-md-4 col-sm-4 col-6">
+                        <img src="../img/cupcake_home_categorias.jpg" alt="Cupcake">
+    
+                        <div class="info_product">
+                            <h4>Cupcake de vainilla</h4>
+                            <p class="tamanio_porcion">6 unidades</p>
+                            <p class="precio_product">s/.35.00</p>
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+                    <div class="pages col-12">
+                        <button><i class="fa-solid fa-caret-left"></i></button>
+                        <input type="number" id="numero_pagina" value="1">
+                        <button><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
                 </div>
             </div>
         </main>
