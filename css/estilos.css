@@ -299,8 +299,34 @@ nav .iconos{
 
 /*Servicios*/
 
-.servicios, .servicios i, .servicios h3{
+.servicios{
+    width: 95%;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+.servicios .tarjeta{
+    border-radius: 0.5rem;
+    margin: 0.5rem auto;
+}
+
+.servicios .tarjeta.fresh, .servicios .tarjeta.delivery{
+    border: solid 2.5px #CFA89D;
+}
+
+.servicios .tarjeta.love, .servicios .tarjeta.cardd{
+    background-color: #CFA89D;
+}
+
+.servicios .tarjeta i{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.servicios .tarjeta h3{
     padding: 0.5rem;
+    text-align: center;
 }
 
 .servicios p{
@@ -699,6 +725,17 @@ footer p{
     {
         width: 10rem;
         height: 12rem;
+    }
+
+    /*SERVICIOS*/
+
+    .servicios .tarjeta.cardd {
+        border: solid 2.5px #CFA89D;
+        background-color: white;
+    }
+    
+    .servicios .tarjeta.delivery{
+        background-color: #CFA89D;
     }
 
     /*SUSCRIPCIÓN*/
