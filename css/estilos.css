@@ -301,6 +301,9 @@ nav .iconos{
     justify-content: center;
     align-items: center;
     width: 75%;
+    padding: 0.5rem;
+    background-color: #030303b9;
+    border-radius: 0.5rem;
 }
 
 /*Servicios*/
@@ -853,6 +856,12 @@ footer p{
         height: 12rem;
     }
 
+    /*FRASE*/
+
+    .frase_home{
+        height: 11rem;
+    }
+
     /*SERVICIOS*/
 
     .servicios .tarjeta.cardd {
@@ -1028,6 +1037,12 @@ footer p{
     {
         width: 7rem;
         height: 9rem;
+    }
+
+    /*FRASE*/
+
+    .frase_home{
+        height: 15rem;
     }
 
     /*SERVICIOS*/
