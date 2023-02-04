@@ -342,6 +342,7 @@ nav .iconos{
 .servicios p{
     font-family: 'Inter', sans-serif;
     padding: 0.5rem;
+    text-align: justify;
 }
 
 /*Equipo*/
@@ -394,18 +395,30 @@ nav .iconos{
 
 .nosotros_description div{
     background-color: #DBCDC6;
+    display: flex;
+    align-items: center;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
 .nosotros_description img{
-    display: flex;
-    justify-content: center;
+    width: 20rem;
+    height: auto;
     margin: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+}
+
+.nosotros_description .repartidor img{
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    order: 1;
 }
 
 .nosotros_description p{
     margin: 0.5rem;
+    text-align: justify;
+    padding: 0.5rem;
 }
 
 /*Equipo*/
@@ -451,6 +464,8 @@ nav .iconos{
     background-color: #e8c9c0c6;
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
+    text-align: justify;
+    padding: 0.5rem;
 }
 
 .equipo.nosotros h3, .equipo.nosotros h4{
@@ -882,6 +897,21 @@ footer p{
 
     /*-----NOSOTROS------*/
 
+    /*Descripción*/
+
+    .nosotros_description div{
+        flex-direction: column;
+    }
+
+    .nosotros_description img{
+        margin-top: 1rem;
+        width: 18rem;
+    }
+
+    .nosotros_description .repartidor img{
+        order: 0;
+    }
+
     /*Equipo*/
 
     .equipo.nosotros h2{
@@ -928,7 +958,7 @@ footer p{
         margin: 1rem;
     }
 
-    /*-----Productos------*/
+    /*-----PRODUCTOS------*/
 
     .filtro{
         display: none;
@@ -1061,6 +1091,36 @@ footer p{
     .equipo.home img{
         width: 8rem;
         height: 11rem;
+    }
+
+    /*-----NOSOTROS------*/
+
+    .equipo.nosotros .person{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .equipo.nosotros .decoradora .tarjeta{
+        order: 0;
+    }
+
+    .equipo.nosotros .person .info{
+        height: 33%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin:auto;
+    }
+
+    .equipo.nosotros .decoradora p{
+        margin-bottom: 0;
+    }
+
+    .equipo.nosotros .tarjeta h3{
+        margin-bottom: 0;
+    }
+
+    .equipo.nosotros p{
+        margin: 0.5rem;
     }
 
 }
