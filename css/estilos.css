@@ -497,6 +497,11 @@ nav .iconos{
 
 .informacion ul{
     padding: 0.5rem;
+    line-height: 3rem;
+}
+
+.contactanos .informacion i{
+    margin-right: 0.8rem;
 }
 
 .contactanos .formulario label,.contactanos .informacion li{
@@ -970,6 +975,12 @@ footer p{
         margin: 1rem;
     }
 
+    /*------CONTÁCTANOS-----*/
+
+    .contactanos .informacion h2{
+        margin-top: 1rem;
+    }
+
     /*-----PRODUCTOS------*/
 
     .filtro{
@@ -1149,4 +1160,9 @@ footer p{
         margin: 0.5rem;
     }
 
+    /*-----SUSCRIPCIÓN------*/
+
+    .suscripcion #correo{
+        width: 22rem;
+    }
 }
