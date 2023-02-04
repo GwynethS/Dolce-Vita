@@ -692,7 +692,7 @@ footer{
     background-color: #5A2A27;
     border-radius: 8px;
     width: 95%;
-    height: 18rem;
+    height: 19rem;
     margin: auto;
     margin-bottom: 1.5rem;
 }
@@ -712,11 +712,23 @@ footer .contactos h4, footer .redes h4, footer .pagos h4{
     font-size: 1rem;
 }
 
-footer ul{
+footer .contactos ul a, footer .pagos ul{
     list-style-type: none;
     color: white;
     text-align: start;
     padding: 0;
+}
+
+footer .redes ul{
+    padding: 0;
+}
+
+footer .contactos ul{
+    line-height: 2;
+}
+
+footer .contactos i{
+    margin-right: 0.8rem;
 }
 
 footer .row.info{
@@ -1017,7 +1029,7 @@ footer p{
         background-color: #5A2A27;
         border-radius: 8px;
         width: 95%;
-        height: 28rem;
+        height: 29rem;
         margin: auto;
         margin-bottom: 1.5rem;
     }
@@ -1044,11 +1056,25 @@ footer p{
         color: white;
         text-align: start;
         padding-left: 1rem;
+        margin-left: 1rem;
+    }
+
+    footer .contactos ul{
+        padding: 0;
+    }
+
+    footer .contactos ul li{
+        padding-left: 0.5rem;
     }
     
     .redes ul, .pagos ul{
         display: flex;
         justify-content: start;
+        margin-left: 1rem;
+    }
+
+    .pagos ul{
+        padding-left: 5rem;
     }
     
     footer p{
