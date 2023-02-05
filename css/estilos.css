@@ -285,7 +285,7 @@ nav .iconos{
 /*Frase*/
 
 .frase_home{
-    background-image: url(../img/tabla_madera.jpg);
+    background-image: url(../img/tabla_madera.jpeg);
     width: 95%;
     height: 10rem;
     background-repeat: no-repeat;
@@ -683,7 +683,7 @@ nav .iconos{
 /*SUSCRIPCIÓN*/
 
 .suscripcion{
-    background-image: url(../img/suscripcion.jpg);
+    background-image: url(../img/suscripcion.jpeg);
     width: 95%;
     height: 10rem;
     background-repeat: no-repeat;
