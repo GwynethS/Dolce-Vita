@@ -261,6 +261,14 @@ nav .iconos{
     text-align: center;
 }
 
+.categorias .categorie img{
+    transition: all 1s ease;
+}
+
+.categorias .categorie:hover img{
+    transform: scale(1.1, 1.1);
+}
+
 .categorias img
 {
     width: 13rem;
@@ -588,6 +596,16 @@ nav .iconos{
     font-weight: 900;
 }
 
+/*Zoom*/
+
+.container_venta .container_productos .product img{
+    transition: all 1s ease;
+}
+
+.container_venta .container_productos .product:hover img{
+    transform: scale(1.1, 1.1);
+}
+
 /*Next page*/
 
 .container_productos .pages{
@@ -653,6 +671,13 @@ nav .iconos{
     width: 9rem;
     height: 2.15rem;
     font-size: 0.75rem;
+    transition: all 1s ease;
+}
+
+/*Carrito Zoom*/
+
+.info_product button:hover{
+    transform: scale(1.1, 1.1);
 }
 
 /*SUSCRIPCIÓN*/
