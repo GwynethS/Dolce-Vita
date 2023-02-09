@@ -265,6 +265,11 @@ nav .iconos{
     transition: all 1s ease;
 }
 
+.categorias .categorie figure{
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
 .categorias .categorie:hover img{
     transform: scale(1.1, 1.1);
 }
@@ -274,7 +279,7 @@ nav .iconos{
     width: 13rem;
     height: 18rem;
     margin: 0.5rem auto;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .categorias h2{
