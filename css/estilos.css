@@ -576,13 +576,23 @@ nav .iconos{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
 }
 
 /*Imagen*/
 
 .product img{
-    width: 10rem;
+    width: 100%;
     height: 12rem;
+    object-fit: cover;
+}
+
+.product figure{
+    width: 90%;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    text-align: center;
+    overflow: hidden;
 }
 
 /*Información*/
@@ -601,6 +611,10 @@ nav .iconos{
 
 .container_venta .container_productos .product img{
     transition: all 1s ease;
+}
+
+.container_venta .container_productos .product figure{
+    overflow: hidden;
 }
 
 .container_venta .container_productos .product:hover img{
@@ -673,6 +687,7 @@ nav .iconos{
     height: 2.15rem;
     font-size: 0.75rem;
     transition: all 1s ease;
+    margin-bottom: 0.5rem;
 }
 
 /*Carrito Zoom*/
