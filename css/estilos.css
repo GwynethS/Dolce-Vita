@@ -378,6 +378,7 @@ nav .iconos{
     height: 15rem;
     margin: 0.5rem auto;
     border-radius: 0.5rem;
+    object-fit: cover;
 }
 
 .equipo h4{
@@ -1167,10 +1168,8 @@ footer p{
     }
 
     .equipo.nosotros .person .info{
-        height: 33%;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        margin:auto;
+        height: max-content;
+        margin:1rem auto;
     }
 
     .equipo.nosotros .decoradora p{
