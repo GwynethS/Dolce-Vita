@@ -1,0 +1,102 @@
+footer{
+    background-color: $marron;
+    border-radius: $borde_redondeado;
+    width: $ancho_pagina;
+    height: 19rem;
+    margin: auto;
+    margin-bottom: 1.5rem;
+
+    .logo{
+        padding: 0.5rem;
+
+        img{
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+
+    .info{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+
+        .contactos{
+            h4{
+                color: $gris_oscuro;
+                padding-bottom: 0.5rem;
+                font-family: $Inter;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            ul{
+                line-height: 2;
+
+                li{
+                    a{
+                        color: white;
+                        text-align: start;
+                        padding: 0;
+
+                        i{
+                            margin-right: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .redes{
+            h4{
+                color: $gris_oscuro;
+                padding-bottom: 0.5rem;
+                font-family: $Inter;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            ul{
+                padding: 0;
+                display: flex;
+                justify-content: center;
+
+                li{
+                    padding-inline: 0.5rem;
+                }
+            }
+        }
+
+        .pagos{
+            h4{
+                color: $gris_oscuro;
+                padding-bottom: 0.5rem;
+                font-family: $Inter;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            ul{
+                color: white;
+                text-align: start;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+
+                li{
+                    padding-inline: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .copyright{
+        p{
+            color: $gris_oscuro;
+            padding-bottom: 0.5rem;
+            font-family: $Inter;
+            text-align: center;
+            font-style: normal;
+            font-size: 0.8rem;
+        }
+    }
+}

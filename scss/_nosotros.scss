@@ -1,0 +1,120 @@
+.nosotros_description{
+    width: $ancho_pagina;
+    margin: auto;
+    margin-top: 3rem;
+
+    .trabajadores{
+        background-color: $fondo_nosotros_description;
+        display: flex;
+        align-items: center;
+        border-radius: $borde_redondeado;
+        margin-bottom: 1.5rem;
+
+        img{
+            width: 20rem;
+            height: auto;
+            margin: 0.5rem;
+            margin-left: 1rem;
+            border-radius: $borde_redondeado;
+        }
+
+        p{
+            margin: 0.5rem;
+            text-align: justify;
+            padding: 0.5rem;
+        }
+    }
+
+    .repartidor{
+        background-color: $fondo_nosotros_description;
+        display: flex;
+        align-items: center;
+        border-radius: $borde_redondeado;
+        margin-bottom: 1.5rem;
+
+        img{
+            width: 20rem;
+            height: auto;
+            margin: 0.5rem;
+            margin-right: 1rem;
+            border-radius: $borde_redondeado;
+            order: 1;
+        }
+
+        p{
+            margin: 0.5rem;
+            text-align: justify;
+            padding: 0.5rem;
+        }
+    }
+}
+
+.equipo.nosotros{
+    h2{
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .row{
+        width: $ancho_pagina;
+        margin: auto;
+        margin-top: 2rem;
+
+        .person{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: solid 2px $fondo_servicios;
+
+            .tarjeta{
+                img{
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    width: 12rem;
+                    height: 15rem;
+                    margin: 0.5rem auto;
+                    border-radius: $borde_redondeado;
+                    object-fit: cover;
+                }
+
+                h3{
+                    text-align: center;
+                }
+
+                h4{
+                    text-align: center;
+                    color:#4F4F4F;
+                    font-family: $Inter;
+                    font-weight: lighter;
+                    padding: 0.5rem;
+                }
+            }
+
+            .info{
+                width: 100%;
+                background-color: #e8c9c0c6;
+                border-radius: $borde_redondeado;
+                margin-bottom: 0.5rem;
+                text-align: justify;
+                padding: 0.5rem;
+
+                p{
+                    padding: 0.5rem;
+                }
+            }
+        }
+
+        .person.chef{
+            border-radius: $borde_redondeado 0 0 $borde_redondeado;
+        }
+
+        .person.asist{
+            border-radius: 0 $borde_redondeado $borde_redondeado 0;
+        }
+
+        .person.decoradora{
+            border-left: 0 ;
+            border-right: 0;
+        }
+    }
+}

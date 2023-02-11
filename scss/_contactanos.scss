@@ -1,0 +1,66 @@
+.contactanos{
+    width: $ancho_pagina;
+    margin: auto;
+    margin-top: 2rem;
+
+    .formulario{
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+
+            label{
+                font-family: $Inter;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+            }
+
+            #nombre{
+                background-color: $gris_claro;
+                border: none;
+                font-family: $Inter;
+                height: 2.5rem;
+            }
+
+            #email{
+                background-color: $gris_claro;
+                border: none;
+                font-family: $Inter;
+                height: 2.5rem;
+            }
+
+            #comentario{
+                background-color: $gris_claro;
+                border: none;
+                font-family: $Inter;
+                resize: none;
+            }
+
+            #enviar_button{
+                font-family: $Inter;
+                font-weight: 600;
+                color: white;
+                background-color: black;
+                padding: 0.2rem;
+                width: 5.5rem;
+                font-size: 0.75rem;
+                margin: auto;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .informacion{
+        ul{
+            padding: 0.5rem;
+            line-height: 3rem;
+
+            li{
+                font-family: $Inter;
+                i{
+                    margin-right: 0.8rem;
+                }
+            }
+        }
+    }
+}

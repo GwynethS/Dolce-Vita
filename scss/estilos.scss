@@ -1,0 +1,29 @@
+$Inter:'Inter', sans-serif;
+$Playfair: 'Playfair Display', serif;
+$ancho_pagina: 95%;
+$borde_redondeado: 0.5rem;
+$gris_claro: #EEEEEE;
+$gris_oscuro: #C1C1C1;
+$marron: #5A2A27;
+$fondo_servicios:#CFA89D;
+$fondo_nosotros_description: #DBCDC6;
+
+@import "generalidades";
+
+@import "header";
+
+@import "home";
+
+@import "nosotros";
+
+@import "contactanos";
+
+@import "productos";
+
+@import "suscripcion";
+
+@import "footer";
+
+@import "media-md";
+
+@import "media-sm";

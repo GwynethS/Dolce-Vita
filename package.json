@@ -1,0 +1,25 @@
+{
+  "name": "dolce-vita",
+  "version": "1.0.0",
+  "description": "Tienda online de reposteria",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GwynethS/DolceVita.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GwynethS/DolceVita/issues"
+  },
+  "homepage": "https://github.com/GwynethS/DolceVita#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

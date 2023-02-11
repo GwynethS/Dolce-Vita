@@ -1,0 +1,108 @@
+@media screen and (max-width: 576px){
+    .categorias{
+        .row{
+            .categorie{
+                figure{
+                    img{
+                        width: 7rem;
+                        height: 9rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .frase_home{
+        height: 15rem;
+    }
+
+    .servicios{
+        .tarjeta.delivery{
+            background-color: white;
+        }
+
+        .tarjeta.cardd{
+            background-color: $fondo_servicios;
+        }
+    }
+
+    .equipo.home{
+        .row{
+            .person{
+                img{
+                    width: 8rem;
+                    height: 11rem;
+                }
+            }
+        }
+    }
+
+    .equipo.nosotros{
+        .row{
+            .person{
+                flex-direction: column;
+            }
+
+            .person.decoradora{
+                .tarjeta{
+                    order: 0;
+
+                    h3{
+                        margin-bottom: 0;
+                    }
+                }
+
+                .info{
+                    height: max-content;
+                    margin:1rem auto;
+
+                    p{
+                        margin: 0.5rem;
+                    }
+                }
+            }
+
+            .person.chef{
+                .tarjeta{
+                    h3{
+                        margin-bottom: 0;
+                    }
+                }
+
+                .info{
+                    height: max-content;
+                    margin:1rem auto;
+
+                    p{
+                        margin: 0.5rem;
+                    }
+                }
+            }
+
+            .person.asist{
+                .tarjeta{
+                    h3{
+                        margin-bottom: 0;
+                    }
+                }
+
+                .info{
+                    height: max-content;
+                    margin:1rem auto;
+
+                    p{
+                        margin: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .suscripcion{
+        form{
+            #correo{
+                width: 22rem;
+            }
+        }
+    }
+}

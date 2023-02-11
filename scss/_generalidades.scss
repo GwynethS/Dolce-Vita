@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+P{
+    font-family: $Inter;
+}
+
+h1{
+    font-size: 1.7rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+h4{
+    font-size: 1.1rem;
+}
+
+body{
+    background-color: white;
+    font-family: $Playfair;
+    color: black;
+}

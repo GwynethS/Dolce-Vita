@@ -1,0 +1,471 @@
+@media screen and (max-width: 768px){
+    
+    header{
+        nav{
+            height: 9rem;
+            display: grid; 
+            grid-template-columns: 1fr 5fr 2fr; 
+            grid-template-rows: 1fr 0.5fr; 
+            gap: 2px; 
+            grid-template-areas: 
+            "hamburguer logo iconos"
+            "busqueda busqueda busqueda";
+
+            .side_menu{
+                .hamburguer{
+                    grid-area: hamburguer;
+                    display: block;
+                    position: relative;
+                    margin-left: 0.5rem;
+                }
+
+                .offcanvas{
+                    background-color: $gris_claro;
+                    .offcanvas-body{
+                        .menu_lat{
+                            line-height: 5rem;
+
+                            .item{
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+
+                                .dropdown{
+                                    button{
+                                        position: relative;
+                                        right: 11px;
+
+                                        &:hover{
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    .submenu{
+                                        background-color: $gris_claro;
+                                        border: none;
+
+                                        .subitem{
+                                            &:hover{
+                                                text-decoration: underline;
+                                            }
+
+                                            .dropdown-item:hover{
+                                                background-color: $gris_claro;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .logo{
+                grid-area: logo;
+                justify-self: flex-start;
+
+                img{
+                    width: 4.5rem;
+                    height: 4.5rem;
+                }
+            }
+
+            .item.busqueda{
+                grid-area: busqueda;
+                justify-content: flex-end;
+
+                input{
+                    width: 80%;
+                    height: 2rem;
+                }
+            }
+
+            .iconos{
+                justify-self: flex-end;
+
+                .item.usuario{
+                    margin: 0.5rem;
+                    transform: scale(1.5, 1.5);
+                }
+
+                .item.cart{
+                    margin: 1rem;
+                    transform: scale(1.5, 1.5);
+                }
+            }
+
+            .menu{
+                display: none;
+            }
+        }
+
+        .frase_header{
+            height:32rem;
+
+            h1{
+                font-size: 1.7rem;
+            }
+        }
+
+        .frase_header.home{
+            h1{
+                height: 5rem;
+                width: 16rem;
+            }
+        }
+
+        .frase_header.nosotros{
+            h1{
+                height: 2.7rem;
+                width: 12rem;
+            }
+        }
+
+        .frase_header.contactanos{
+            h1{
+                height: 2.7rem;
+                width: 12rem;
+            }
+        }
+
+        .frase_header.p_tortas{
+            h1{
+                height: 2.7rem;
+                width: 12rem;
+            }
+        }
+
+        .frase_header.p_cupcakes{
+            h1{
+                height: 2.7rem;
+                width: 12rem;
+            }
+        }
+    }
+
+    .categorias{
+        .row{
+            .categorie{
+                figure{
+                    img{
+                        width: 10rem;
+                        height: 12rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .frase_home{
+        height: 11rem;
+    }
+
+    .servicios{
+        .tarjeta.cardd{
+            border: solid 2.5px $fondo_servicios;
+            background-color: white;
+        }
+    
+        .tarjeta.delivery{
+            background-color: $fondo_servicios;
+        }
+    }
+
+    .equipo.home{
+        .row{
+            .person{
+                img{
+                    width: 9rem;
+                    height: 12rem;
+                }
+            }
+        }
+    }
+
+    .nosotros_description{
+        div{
+            flex-direction: column;
+        }
+
+        .trabajadores{
+            img{
+                margin-top: 1rem;
+                width: 18rem;
+            }
+        }
+
+        .repartidor{
+            img{
+                margin-top: 1rem;
+                width: 18rem;
+                order: 0;
+            }
+        }
+    }
+
+    .equipo.nosotros{
+        h2{
+            font-size: 1.4rem;
+        }
+
+        .row{
+            .person{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 2rem;
+            }
+
+            .person.decoradora{
+                border: solid 2px $fondo_servicios;
+                border-radius: $borde_redondeado;
+
+                .tarjeta{
+                    order: 1;
+
+                    h3{
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .info{
+                    height: 92%;
+                    margin-top: 0.5rem;
+                    margin-right: 2rem;
+                    display: flex;
+                    align-items: center;
+
+                    p{
+                        margin: 1rem;
+                    }
+                }
+            }
+
+            .person.chef{
+                border-radius: $borde_redondeado;
+
+                .tarjeta{
+                    h3{
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .info{
+                    height: 92%;
+                    margin-top: 0.5rem;
+                    margin-left: 2rem;
+                    display: flex;
+                    align-items: center;
+
+                    p{
+                        margin: 1rem;
+                    }
+                }
+            }
+
+            .person.asist{
+                border-radius: $borde_redondeado;
+
+                .tarjeta{
+                    h3{
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .info{
+                    height: 92%;
+                    margin-top: 0.5rem;
+                    margin-left: 2rem;
+                    display: flex;
+                    align-items: center;
+
+                    p{
+                        margin: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contactanos{
+        .informacion{
+            h2{
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .container_venta{
+        .filtro{
+            display: none;
+        }
+
+        .side_filter{
+            #filtrar_button{
+                display: block;
+            }
+
+            .offcanvas{
+                background-color: white;
+
+                .offcanvas-body{
+                    .f_precio{
+                        h4{
+                            margin-bottom: 1.5rem;
+                        }
+
+                        #precio_minimo{
+                            font-family: $Inter;
+                            background-color: $gris_claro;
+                            border: none;
+                            height: 1.7rem;
+                            width: 6.5rem;
+                            padding: 1rem;
+                            margin: 0.5rem;
+
+                            &::placeholder{
+                                font-family: $Playfair;
+                                background-color: $gris_claro;
+                                border: none;
+                                height: 1.7rem;
+                                width: 6.5rem;
+                            }
+                        }
+            
+                        #precio_maximo{
+                            font-family: $Inter;
+                            background-color: $gris_claro;
+                            border: none;
+                            height: 1.7rem;
+                            width: 6.5rem;
+                            padding: 1rem;
+                            margin: 0.5rem;
+            
+                            &::placeholder{
+                                font-family: $Playfair;
+                                background-color: $gris_claro;
+                                border: none;
+                                height: 1.7rem;
+                                width: 6.5rem;
+                            }
+                        }
+                    }
+
+                    .f_unidades{
+                        h4{
+                            margin-top: 2rem;
+                            margin-bottom: 1.5rem;
+                        }
+
+                        ul{
+                            margin: 0;
+                            padding: 0.5rem;
+                            text-align: start;
+                            line-height: 2.5;
+                        }
+                    }
+
+                    .f_porciones{
+                        h4{
+                            margin-top: 2rem;
+                        }
+
+                        ul{
+                            margin: 0;
+                            padding: 0.5rem;
+                            text-align: start;
+                            line-height: 2.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .suscripcion{
+        height: 13rem;
+        flex-direction: column;
+
+        h3{
+            position: relative;
+            top: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        form{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2.3rem;
+
+            #correo{
+                width: 25rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    footer{
+        height: 29rem;
+
+        .logo{
+            img{
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+
+        .info{
+            .contactos{
+                h4{
+                    padding-left: 1rem;
+                    text-align: start;
+                    font-size: 1rem;
+                }
+
+                ul{
+                    text-align: start;
+                    padding-left: 1rem;
+                    margin-left: 1rem;
+                    padding: 0;
+
+                    li{
+                        padding-left: 0.5rem;
+                    }
+                }
+            }
+
+            .redes{
+                h4{
+                    padding-left: 1rem;
+                    text-align: start;
+                    font-size: 1rem;
+                }
+
+                ul{
+                    text-align: start;
+                    margin-left: 1rem;
+                    justify-content: start;
+                }
+            }
+
+            .pagos{
+                h4{
+                    padding-left: 1rem;
+                    text-align: start;
+                    font-size: 1rem;
+                }
+
+                ul{
+                    text-align: start;
+                    margin-left: 1rem;
+                    justify-content: start;
+                }
+            }   
+        }
+
+        .copyright{
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.suscripcion{
+    background-image: url(../img/suscripcion.jpeg);
+    width: $ancho_pagina;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+
+        #correo{
+            font-family: $Playfair;
+            padding: 0.2rem;
+            width: 20rem;
+            background-color: $gris_claro;
+            border: none;
+
+            &::placeholder{
+                color:#030303;
+            }
+        }
+
+        #suscribir_button{
+            font-family: $Inter;
+            font-weight: 600;
+            color: white;
+            background-color: black;
+            padding: 0.2rem;
+            width: 5.5rem;
+            font-size: 0.75rem;
+                }
+    }
+}

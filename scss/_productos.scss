@@ -1,0 +1,170 @@
+.container_venta{
+    width: $ancho_pagina;
+    margin: auto;
+    margin-top: 2rem;
+
+    .side_filter{
+        #filtrar_button{
+            padding: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            background-color: white;
+            border: black solid 2px;
+            border-radius: 0;
+            display: none;
+        }
+    }
+
+    .filtro{
+        padding: 0.5rem;
+
+        h3{
+            padding: 0.5rem;
+        }
+
+        .f_precio{
+            h4{
+                padding: 0.5rem;
+            }
+
+            #precio_minimo{
+                font-family: $Inter;
+                background-color: $gris_claro;
+                border: none;
+                height: 1.7rem;
+                width: 6.5rem;
+                padding: 1rem;
+                margin: 0.5rem;
+
+                &::placeholder{
+                    font-family: $Playfair;
+                    background-color: $gris_claro;
+                    border: none;
+                    height: 1.7rem;
+                    width: 6.5rem;
+                }
+            }
+
+            #precio_maximo{
+                font-family: $Inter;
+                background-color: $gris_claro;
+                border: none;
+                height: 1.7rem;
+                width: 6.5rem;
+                padding: 1rem;
+                margin: 0.5rem;
+
+                &::placeholder{
+                    font-family: $Playfair;
+                    background-color: $gris_claro;
+                    border: none;
+                    height: 1.7rem;
+                    width: 6.5rem;
+                }
+            }
+        }
+
+        .f_porciones{
+            h4{
+                padding: 0.5rem;
+            }
+
+            ul{
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .container_productos{
+        padding: 0.5rem;
+        margin: auto;
+
+        .product{
+            padding: 0.5rem;
+            border: solid white 4px;
+            background-color: $gris_claro;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+
+            &:hover{
+                figure{
+                    img{
+                        transform: scale(1.1, 1.1);
+                    }
+                }
+            }
+
+            figure{
+                width: 90%;
+                margin-top: 0.5rem;
+                margin-bottom: 0;
+                text-align: center;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 12rem;
+                    object-fit: cover;
+                    transition: all 1s ease;
+                }
+            }
+
+            .info_product{
+                margin-top: 0.5rem;
+                line-height: 1.5;
+
+                .precio_product{
+                    color: $marron;
+                    font-weight: 900;
+                }
+
+                button{
+                    font-family: $Inter;
+                    font-weight: 600;
+                    color: white;
+                    background-color: black;
+                    padding: 0.2rem;
+                    width: 9rem;
+                    height: 2.15rem;
+                    font-size: 0.75rem;
+                    transition: all 1s ease;
+                    margin-bottom: 0.5rem;
+
+                    &:hover{
+                        color: black;
+                        background-color: white;
+                        border: 2px solid black;
+                    }
+                }
+            }
+        }
+
+        .pages{
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+
+            button{
+                background-color: white;
+                border: 0;
+                padding-inline: 0.7rem;
+            }
+
+            #numero_pagina{
+                background-color: white;
+                border: 1px solid black;
+                font-family: $Inter;
+                font-weight: 600;
+                padding: 0.2rem;
+                text-align: right;
+                width: 3rem;
+            }
+        }
+    }
+}
