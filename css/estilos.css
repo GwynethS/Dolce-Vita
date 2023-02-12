@@ -111,7 +111,7 @@ header .frase_header {
     font-size: 2rem; }
 
 header .frase_header.home {
-  background-image: url(../img/header_home.jpg);
+  background-image: url(../img/header_home.jpeg);
   font-style: italic;
   display: flex;
   align-items: center;
@@ -126,7 +126,7 @@ header .frase_header.home {
     align-items: center; }
 
 header .frase_header.nosotros {
-  background-image: url(../img/header_nosotros.jpg);
+  background-image: url(../img/header_nosotros.jpeg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,7 +142,7 @@ header .frase_header.nosotros {
     align-items: center; }
 
 header .frase_header.contactanos {
-  background-image: url(../img/header_contactanos.jpg);
+  background-image: url(../img/header_contactanos.jpeg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +158,7 @@ header .frase_header.contactanos {
     align-items: center; }
 
 header .frase_header.p_tortas {
-  background-image: url(../img/header_tortas.jpg);
+  background-image: url(../img/header_tortas.jpeg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,7 +174,7 @@ header .frase_header.p_tortas {
     align-items: center; }
 
 header .frase_header.p_cupcakes {
-  background-image: url(../img/header_cupcakes.jpg);
+  background-image: url(../img/header_cupcakes.jpeg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +213,8 @@ header .frase_header.p_cupcakes {
         width: 13rem;
         height: 18rem;
         margin: 0.5rem auto;
-        border-radius: 0.5rem; }
+        border-radius: 0.5rem;
+        object-fit: cover; }
 
 .frase_home {
   background-image: url(../img/tabla_madera.jpeg);
