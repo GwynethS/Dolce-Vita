@@ -27,6 +27,7 @@
         .f_precio{
             h4{
                 padding: 0.5rem;
+                font-weight: 600;
             }
 
             #precio_minimo{
@@ -69,10 +70,28 @@
         .f_porciones{
             h4{
                 padding: 0.5rem;
+                font-weight: 600;
             }
 
             ul{
                 padding: 0.5rem;
+                padding-left: 1rem;
+                font-family: $Inter;
+                line-height: 2;
+            }
+        }
+
+        .f_unidades{
+            h4{
+                padding: 0.5rem;
+                font-weight: 600;
+            }
+
+            ul{
+                padding: 0.5rem;
+                padding-left: 1rem;
+                font-family: $Inter;
+                line-height: 2;
             }
         }
     }

@@ -311,6 +311,7 @@
                     .f_precio{
                         h4{
                             margin-bottom: 1.5rem;
+                            font-weight: 600;
                         }
 
                         #precio_minimo{
@@ -353,27 +354,32 @@
                     .f_unidades{
                         h4{
                             margin-top: 2rem;
-                            margin-bottom: 1.5rem;
+                            font-weight: 600;
                         }
 
                         ul{
                             margin: 0;
                             padding: 0.5rem;
+                            padding-left: 1rem;
                             text-align: start;
                             line-height: 2.5;
+                            font-family: $Inter;
                         }
                     }
 
                     .f_porciones{
                         h4{
                             margin-top: 2rem;
+                            font-weight: 600;
                         }
 
                         ul{
                             margin: 0;
                             padding: 0.5rem;
+                            padding-left: 1rem;
                             text-align: start;
                             line-height: 2.5;
+                            font-family: $Inter;
                         }
                     }
                 }
