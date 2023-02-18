@@ -135,6 +135,9 @@
             .info_product{
                 margin-top: 0.5rem;
                 line-height: 1.5;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
 
                 .precio_product{
                     color: $marron;
@@ -152,6 +155,7 @@
                     font-size: 0.75rem;
                     transition: all 1s ease;
                     margin-bottom: 0.5rem;
+                    align-self: center;
 
                     &:hover{
                         color: black;

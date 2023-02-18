@@ -515,7 +515,10 @@ header .frase_header.p_cupcakes {
           transition: all 1s ease; }
       .container_venta .container_productos .product .info_product {
         margin-top: 0.5rem;
-        line-height: 1.5; }
+        line-height: 1.5;
+        width: 90%;
+        display: flex;
+        flex-direction: column; }
         .container_venta .container_productos .product .info_product .precio_product {
           color: #5A2A27;
           font-weight: 900; }
@@ -529,7 +532,8 @@ header .frase_header.p_cupcakes {
           height: 2.15rem;
           font-size: 0.75rem;
           transition: all 1s ease;
-          margin-bottom: 0.5rem; }
+          margin-bottom: 0.5rem;
+          align-self: center; }
           .container_venta .container_productos .product .info_product button:hover {
             color: black;
             background-color: white;
