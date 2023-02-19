@@ -89,24 +89,24 @@ header nav {
     justify-content: flex-end; }
     header nav .item.busqueda input {
       font-family: "Playfair Display", serif;
+      background-color: #EEEEEE;
+      border: none;
       font-size: 0.85rem;
       padding: 0.2rem;
-      width: 12rem;
-      background-color: #EEEEEE;
-      border: none; }
+      width: 12rem; }
     header nav .item.busqueda button {
       margin-left: 0.5rem;
       background-color: white;
       border: none; }
 
 header .frase_header {
-  height: 38rem;
   width: 95%;
+  height: 38rem;
+  border-radius: 0.5rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: auto;
-  border-radius: 0.5rem; }
+  margin: auto; }
   header .frase_header h1 {
     font-size: 2rem; }
 
@@ -220,13 +220,13 @@ header .frase_header.p_cupcakes {
   background-image: url(../img/tabla_madera.jpeg);
   width: 95%;
   height: 10rem;
+  border-radius: 0.5rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -392,19 +392,19 @@ header .frase_header.p_cupcakes {
       margin-bottom: 1rem;
       margin-top: 1rem; }
     .contactanos .formulario form #nombre {
+      font-family: "Inter", sans-serif;
       background-color: #EEEEEE;
       border: none;
-      font-family: "Inter", sans-serif;
       height: 2.5rem; }
     .contactanos .formulario form #email {
+      font-family: "Inter", sans-serif;
       background-color: #EEEEEE;
       border: none;
-      font-family: "Inter", sans-serif;
       height: 2.5rem; }
     .contactanos .formulario form #comentario {
+      font-family: "Inter", sans-serif;
       background-color: #EEEEEE;
       border: none;
-      font-family: "Inter", sans-serif;
       resize: none; }
     .contactanos .formulario form #enviar_button {
       font-family: "Inter", sans-serif;
@@ -412,8 +412,8 @@ header .frase_header.p_cupcakes {
       color: white;
       background-color: black;
       padding: 0.2rem;
-      width: 5.5rem;
       font-size: 0.75rem;
+      width: 5.5rem;
       margin: auto;
       margin-top: 1rem; }
   .contactanos .informacion ul {
@@ -498,8 +498,7 @@ header .frase_header.p_cupcakes {
       background-color: #EEEEEE;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      align-content: center; }
+      align-items: center; }
       .container_venta .container_productos .product:hover figure img {
         transform: scale(1.1, 1.1); }
       .container_venta .container_productos .product figure {
@@ -528,9 +527,9 @@ header .frase_header.p_cupcakes {
           color: white;
           background-color: black;
           padding: 0.2rem;
+          font-size: 0.75rem;
           width: 9rem;
           height: 2.15rem;
-          font-size: 0.75rem;
           transition: all 1s ease;
           margin-bottom: 0.5rem;
           align-self: center; }
@@ -541,8 +540,8 @@ header .frase_header.p_cupcakes {
     .container_venta .container_productos .pages {
       padding: 0.5rem;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       margin-top: 2rem; }
       .container_venta .container_productos .pages button {
         background-color: white;
@@ -561,13 +560,13 @@ header .frase_header.p_cupcakes {
   background-image: url(../img/suscripcion.jpeg);
   width: 95%;
   height: 10rem;
+  border-radius: 0.5rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: auto;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
-  border-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -581,10 +580,10 @@ header .frase_header.p_cupcakes {
     padding: 0.5rem; }
     .suscripcion form #correo {
       font-family: "Playfair Display", serif;
-      padding: 0.2rem;
-      width: 20rem;
       background-color: #EEEEEE;
-      border: none; }
+      border: none;
+      padding: 0.2rem;
+      width: 20rem; }
       .suscripcion form #correo::placeholder {
         color: #030303; }
     .suscripcion form #suscribir_button {
@@ -593,8 +592,8 @@ header .frase_header.p_cupcakes {
       color: white;
       background-color: black;
       padding: 0.2rem;
-      width: 5.5rem;
-      font-size: 0.75rem; }
+      font-size: 0.75rem;
+      width: 5.5rem; }
 
 footer {
   background-color: #5A2A27;

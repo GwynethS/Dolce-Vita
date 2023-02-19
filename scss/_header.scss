@@ -38,9 +38,7 @@ header{
 
             .lista{
                 margin: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-row-center;
 
                 .item{
                     padding: 0.5rem;
@@ -91,12 +89,10 @@ header{
             justify-content: flex-end;
 
             input{
-                font-family: $Playfair;
+                @include input-style($Playfair);
                 font-size: 0.85rem;
                 padding: 0.2rem;
                 width: 12rem;
-                background-color: $gris_claro;
-                border: none;
             }
 
             button{
@@ -108,13 +104,7 @@ header{
     }
 
     .frase_header{
-        height:38rem;
-        width: $ancho_pagina;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        margin: auto;
-        border-radius: $borde_redondeado;
+        @include bg-image(38rem);
 
         h1{
             font-size: 2rem;
@@ -141,77 +131,49 @@ header{
 
     .frase_header.nosotros{
         background-image: url(../img/headers/header_nosotros.jpeg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row-center;
         color: white;
         font-style: italic;
 
         h1{
-            background-color: #ffffff69;
-            height: 3rem;
-            width: 19rem;
-            padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include texto-header(#ffffff69);
+            @include flex-row-center;
         }
     }
 
     .frase_header.contactanos{
         background-image: url(../img/headers/header_contactanos.jpeg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row-center;
         color: white;
         font-style: italic;
 
         h1{
-            background-color: #0000005a;
-            height: 3rem;
-            width: 19rem;
-            padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include texto-header(#0000005a);
+            @include flex-row-center;
         }
     }
 
     .frase_header.p_tortas{
         background-image: url(../img/headers/header_tortas.jpeg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row-center;
         color: white;
         font-style: italic;
 
         h1{
-            background-color: #ffffff69;
-            height: 3rem;
-            width: 19rem;
-            padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include texto-header(#ffffff69);
+            @include flex-row-center;
         }
     }
 
     .frase_header.p_cupcakes{
         background-image:url(../img/headers/header_cupcakes.jpeg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row-center;
         color: white;
         font-style: italic;
 
         h1{
-            background-color: #0000005a;
-            height: 3rem;
-            width: 19rem;
-            padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include texto-header(#0000005a);
+            @include flex-row-center;
         }
     }
 }

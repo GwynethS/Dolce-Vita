@@ -10,9 +10,7 @@
         margin-bottom: 1.5rem;
 
         .categorie{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column-center;
             text-align: center;
 
             figure{
@@ -40,27 +38,17 @@
 
 .frase_home{
     background-image: url(../img/tabla_madera.jpeg);
-    width: $ancho_pagina;
-    height: 10rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: auto;
+    @include bg-image(10rem);
     margin-top: 3rem;
     margin-bottom: 3rem;
-    border-radius: $borde_redondeado;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-row-center;
 
     h2{
         color: white;
         font-style: italic;
         font-weight: lighter;
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row-center;
         width: 75%;
         padding: 0.5rem;
         background-color: #030303b9;
@@ -124,9 +112,7 @@
         margin-bottom: 1.5rem;
 
         .person{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column-center;
             text-align: center;
 
             img{

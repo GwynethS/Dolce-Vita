@@ -31,36 +31,28 @@
             }
 
             #precio_minimo{
-                font-family: $Inter;
-                background-color: $gris_claro;
-                border: none;
+                @include input-style($Inter);
                 height: 1.7rem;
                 width: 6.5rem;
                 padding: 1rem;
                 margin: 0.5rem;
 
                 &::placeholder{
-                    font-family: $Playfair;
-                    background-color: $gris_claro;
-                    border: none;
+                    @include input-style($Playfair);
                     height: 1.7rem;
                     width: 6.5rem;
                 }
             }
 
             #precio_maximo{
-                font-family: $Inter;
-                background-color: $gris_claro;
-                border: none;
+                @include input-style($Inter);
                 height: 1.7rem;
                 width: 6.5rem;
                 padding: 1rem;
                 margin: 0.5rem;
 
                 &::placeholder{
-                    font-family: $Playfair;
-                    background-color: $gris_claro;
-                    border: none;
+                    @include input-style($Playfair);
                     height: 1.7rem;
                     width: 6.5rem;
                 }
@@ -104,10 +96,7 @@
             padding: 0.5rem;
             border: solid white 4px;
             background-color: $gris_claro;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
+            @include flex-column-center;
 
             &:hover{
                 figure{
@@ -145,14 +134,8 @@
                 }
 
                 button{
-                    font-family: $Inter;
-                    font-weight: 600;
-                    color: white;
-                    background-color: black;
-                    padding: 0.2rem;
-                    width: 9rem;
+                    @include button-style(9rem);
                     height: 2.15rem;
-                    font-size: 0.75rem;
                     transition: all 1s ease;
                     margin-bottom: 0.5rem;
                     align-self: center;
@@ -168,9 +151,7 @@
 
         .pages{
             padding: 0.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-row-center;
             margin-top: 2rem;
 
             button{

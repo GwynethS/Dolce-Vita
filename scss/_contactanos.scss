@@ -16,34 +16,22 @@
             }
 
             #nombre{
-                background-color: $gris_claro;
-                border: none;
-                font-family: $Inter;
+                @include input-style($Inter);
                 height: 2.5rem;
             }
 
             #email{
-                background-color: $gris_claro;
-                border: none;
-                font-family: $Inter;
+                @include input-style($Inter);
                 height: 2.5rem;
             }
 
             #comentario{
-                background-color: $gris_claro;
-                border: none;
-                font-family: $Inter;
+                @include input-style($Inter);
                 resize: none;
             }
 
             #enviar_button{
-                font-family: $Inter;
-                font-weight: 600;
-                color: white;
-                background-color: black;
-                padding: 0.2rem;
-                width: 5.5rem;
-                font-size: 0.75rem;
+                @include button-style(5.5rem);
                 margin: auto;
                 margin-top: 1rem;
             }
