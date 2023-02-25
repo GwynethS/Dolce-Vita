@@ -704,7 +704,8 @@ footer {
         height: 4.5rem; }
     header nav .item.busqueda {
       grid-area: busqueda;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      margin-right: 1rem; }
       header nav .item.busqueda input {
         width: 80%;
         height: 2rem; }
@@ -715,6 +716,7 @@ footer {
         transform: scale(1.5, 1.5); }
       header nav .iconos .item.cart {
         margin: 1rem;
+        margin-right: 1.5rem;
         transform: scale(1.5, 1.5); }
     header nav .menu {
       display: none; }

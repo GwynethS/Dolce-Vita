@@ -74,6 +74,7 @@
             .item.busqueda{
                 grid-area: busqueda;
                 justify-content: flex-end;
+                margin-right: 1rem;
 
                 input{
                     width: 80%;
@@ -91,6 +92,7 @@
 
                 .item.cart{
                     margin: 1rem;
+                    margin-right: 1.5rem;
                     transform: scale(1.5, 1.5);
                 }
             }
