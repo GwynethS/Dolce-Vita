@@ -239,6 +239,7 @@ header .frase_header.p_cupcakes {
     align-items: center;
     width: 75%;
     padding: 0.5rem;
+    margin-bottom: 0;
     background-color: #030303b9;
     border-radius: 0.5rem; }
 
@@ -990,3 +991,7 @@ footer {
       text-align: center;
       font-style: normal;
       font-size: 0.8rem; } }
+
+@media screen and (max-width: 425px) {
+  .frase_home {
+    height: 18rem; } }
