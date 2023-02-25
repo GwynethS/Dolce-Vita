@@ -30,8 +30,8 @@
         .row{
             .person{
                 img{
-                    width: 8rem;
-                    height: 11rem;
+                    width: 7rem;
+                    height: 10rem;
                 }
             }
         }
@@ -102,6 +102,69 @@
         form{
             #correo{
                 width: 100%;
+            }
+        }
+    }
+
+    footer{
+        .logo{
+            padding: 0;
+            img{
+                margin-top: 0.5rem;
+                margin-left: 0;
+            }
+        }
+
+        .info{    
+            .contactos{
+                h4{
+                    margin-left: 0.5rem;
+                    margin-top: 1rem;
+                    padding-left: 0;
+                }
+    
+                ul{
+                    margin-left: 0;
+    
+                    li{
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
+    
+            .redes{
+                h4{
+                    margin-left: 0.5rem;
+                    padding-left: 0;
+                }
+
+                ul{
+                    margin-left: 0.5rem;
+                }
+            }
+
+            .pagos{
+                h4{
+                    margin-left: 0.5rem;
+                    padding-left: 0;
+                }
+
+                ul{
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    
+        .copyright{
+            margin-bottom: none;
+            height: 1rem;
+            p{
+                color: $gris_oscuro;
+                margin-bottom: 0.5rem;
+                font-family: $Inter;
+                text-align: center;
+                font-style: normal;
+                font-size: 0.8rem;
             }
         }
     }

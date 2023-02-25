@@ -928,8 +928,8 @@ footer {
   .servicios .tarjeta.cardd {
     background-color: #CFA89D; }
   .equipo.home .row .person img {
-    width: 8rem;
-    height: 11rem; }
+    width: 7rem;
+    height: 10rem; }
   .equipo.nosotros .row .person {
     flex-direction: column; }
   .equipo.nosotros .row .person.decoradora .tarjeta {
@@ -956,4 +956,37 @@ footer {
     .equipo.nosotros .row .person.asist .info p {
       margin: 0.5rem; }
   .suscripcion form #correo {
-    width: 100%; } }
+    width: 100%; }
+  footer .logo {
+    padding: 0; }
+    footer .logo img {
+      margin-top: 0.5rem;
+      margin-left: 0; }
+  footer .info .contactos h4 {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    padding-left: 0; }
+  footer .info .contactos ul {
+    margin-left: 0; }
+    footer .info .contactos ul li {
+      margin-left: 0.5rem; }
+  footer .info .redes h4 {
+    margin-left: 0.5rem;
+    padding-left: 0; }
+  footer .info .redes ul {
+    margin-left: 0.5rem; }
+  footer .info .pagos h4 {
+    margin-left: 0.5rem;
+    padding-left: 0; }
+  footer .info .pagos ul {
+    margin-left: 0.5rem; }
+  footer .copyright {
+    margin-bottom: none;
+    height: 1rem; }
+    footer .copyright p {
+      color: #C1C1C1;
+      margin-bottom: 0.5rem;
+      font-family: "Inter", sans-serif;
+      text-align: center;
+      font-style: normal;
+      font-size: 0.8rem; } }
