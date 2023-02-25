@@ -1,7 +1,12 @@
 footer{
     background-color: $marron;
     width: 100%;
+    margin: auto;
     height: 20rem;
+
+    .row{
+        margin: 0;
+    }
 
     .logo{
         padding: 0.5rem;
@@ -98,7 +103,6 @@ footer{
             text-align: center;
             font-style: normal;
             font-size: 0.8rem;
-            width: 99vw;
         }
     }
 }

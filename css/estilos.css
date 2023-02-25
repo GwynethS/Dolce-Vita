@@ -33,11 +33,10 @@ body {
 header nav {
   background-color: white;
   position: fixed;
-  top: 0;
-  left: 2.5%;
   z-index: 2;
-  padding: 0;
-  width: 95%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
   height: 6rem;
   margin: auto;
   display: grid;
@@ -598,7 +597,10 @@ header .frase_header.p_cupcakes {
 footer {
   background-color: #5A2A27;
   width: 100%;
+  margin: auto;
   height: 20rem; }
+  footer .row {
+    margin: 0; }
   footer .logo {
     padding: 0.5rem; }
     footer .logo img {
@@ -659,8 +661,7 @@ footer {
       font-family: "Inter", sans-serif;
       text-align: center;
       font-style: normal;
-      font-size: 0.8rem;
-      width: 99vw; }
+      font-size: 0.8rem; }
 
 @media screen and (max-width: 768px) {
   header nav {
