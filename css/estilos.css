@@ -659,7 +659,8 @@ footer {
       font-family: "Inter", sans-serif;
       text-align: center;
       font-style: normal;
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      width: 99vw; }
 
 @media screen and (max-width: 768px) {
   header nav {
