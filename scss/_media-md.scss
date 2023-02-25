@@ -4,6 +4,7 @@
         nav{
             height: 9rem;
             display: grid; 
+            padding: 0;
             grid-template-columns: 1fr 5fr 2fr; 
             grid-template-rows: 1fr 0.5fr; 
             gap: 2px; 
