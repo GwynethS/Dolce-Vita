@@ -597,8 +597,7 @@ header .frase_header.p_cupcakes {
 
 footer {
   background-color: #5A2A27;
-  border-radius: 0.5rem;
-  width: 95%;
+  width: 100%;
   height: 19rem;
   margin: auto;
   margin-bottom: 1.5rem; }
@@ -945,4 +944,6 @@ footer {
     .equipo.nosotros .row .person.asist .info p {
       margin: 0.5rem; }
   .suscripcion form #correo {
-    width: 22rem; } }
+    width: 22rem; }
+  footer {
+    margin-bottom: none; } }
