@@ -288,7 +288,8 @@ header .frase_header.p_cupcakes {
       height: 15rem;
       margin: 0.5rem auto;
       border-radius: 0.5rem;
-      object-fit: cover; }
+      object-fit: cover;
+      box-shadow: 0 0 0.2rem #989898; }
     .equipo.home .row .person h4 {
       color: #4F4F4F;
       font-family: "Inter", sans-serif;
@@ -353,7 +354,8 @@ header .frase_header.p_cupcakes {
       height: 15rem;
       margin: 0.5rem auto;
       border-radius: 0.5rem;
-      object-fit: cover; }
+      object-fit: cover;
+      box-shadow: 0 0 0.2rem #989898; }
     .equipo.nosotros .row .person .tarjeta h3 {
       text-align: center; }
     .equipo.nosotros .row .person .tarjeta h4 {
