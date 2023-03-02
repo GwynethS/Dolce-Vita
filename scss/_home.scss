@@ -16,8 +16,11 @@
             figure{
                 overflow: hidden;
                 border-radius: $borde_redondeado;
+                box-shadow: 0 0 0.3rem #8b8b8b;
 
                 &:hover{
+                    box-shadow: 0 0 1rem #8b8b8b;
+
                     img{
                         transform: scale(1.1, 1.1);
                     }
@@ -27,7 +30,6 @@
                     transition: all 1s ease;
                     width: 13rem;
                     height: 18rem;
-                    margin: 0.5rem auto;
                     border-radius: $borde_redondeado;
                     object-fit: cover;
                 }
@@ -122,7 +124,7 @@
                 margin: 0.5rem auto;
                 border-radius: $borde_redondeado;
                 object-fit: cover;
-                box-shadow: 0 0 0.2rem #989898;
+                box-shadow: 0 0 0.5rem #989898;
             }
 
             h4{

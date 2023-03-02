@@ -204,14 +204,16 @@ header .frase_header.p_cupcakes {
     text-align: center; }
     .categorias .row .categorie figure {
       overflow: hidden;
-      border-radius: 0.5rem; }
-      .categorias .row .categorie figure:hover img {
-        transform: scale(1.1, 1.1); }
+      border-radius: 0.5rem;
+      box-shadow: 0 0 0.3rem #8b8b8b; }
+      .categorias .row .categorie figure:hover {
+        box-shadow: 0 0 1rem #8b8b8b; }
+        .categorias .row .categorie figure:hover img {
+          transform: scale(1.1, 1.1); }
       .categorias .row .categorie figure img {
         transition: all 1s ease;
         width: 13rem;
         height: 18rem;
-        margin: 0.5rem auto;
         border-radius: 0.5rem;
         object-fit: cover; }
 
@@ -289,7 +291,7 @@ header .frase_header.p_cupcakes {
       margin: 0.5rem auto;
       border-radius: 0.5rem;
       object-fit: cover;
-      box-shadow: 0 0 0.2rem #989898; }
+      box-shadow: 0 0 0.5rem #989898; }
     .equipo.home .row .person h4 {
       color: #4F4F4F;
       font-family: "Inter", sans-serif;
