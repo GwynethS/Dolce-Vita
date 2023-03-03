@@ -286,13 +286,15 @@ header .frase_header.p_cupcakes {
     flex-direction: column;
     align-items: center;
     text-align: center; }
-    .equipo.home .row .person img {
-      width: 12rem;
-      height: 15rem;
-      margin: 0.5rem auto;
-      border-radius: 0.5rem;
-      object-fit: cover;
-      box-shadow: 0 0 0.5rem #989898; }
+    .equipo.home .row .person figure {
+      margin: 0; }
+      .equipo.home .row .person figure img {
+        width: 12rem;
+        height: 15rem;
+        margin: 0.5rem auto;
+        border-radius: 0.5rem;
+        object-fit: cover;
+        box-shadow: 0 0 0.5rem #989898; }
     .equipo.home .row .person h4 {
       color: #4F4F4F;
       font-family: "Inter", sans-serif;
@@ -767,7 +769,7 @@ footer {
     background-color: white; }
   .servicios .tarjeta.delivery {
     background-color: #CFA89D; }
-  .equipo.home .row .person img {
+  .equipo.home .row .person figure img {
     width: 9rem;
     height: 12rem; }
   .nosotros_description div {
@@ -960,7 +962,7 @@ footer {
     background-color: white; }
   .servicios .tarjeta.cardd {
     background-color: #CFA89D; }
-  .equipo.home .row .person img {
+  .equipo.home .row .person figure img {
     width: 7rem;
     height: 10rem; }
   .equipo.nosotros .row .person {

@@ -119,13 +119,16 @@
             @include flex-column-center;
             text-align: center;
 
-            img{
-                width: 12rem;
-                height: 15rem;
-                margin: 0.5rem auto;
-                border-radius: $borde_redondeado;
-                object-fit: cover;
-                box-shadow: 0 0 0.5rem #989898;
+            figure{
+                margin: 0;
+                img{
+                    width: 12rem;
+                    height: 15rem;
+                    margin: 0.5rem auto;
+                    border-radius: $borde_redondeado;
+                    object-fit: cover;
+                    box-shadow: 0 0 0.5rem #989898;
+                }
             }
 
             h4{
