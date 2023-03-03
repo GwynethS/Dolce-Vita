@@ -297,7 +297,16 @@ header .frase_header.p_cupcakes {
       color: #4F4F4F;
       font-family: "Inter", sans-serif;
       font-weight: lighter;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      height: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .equipo.home .row .person h3 {
+      height: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 .nosotros_description {
   width: 95%;
@@ -1003,6 +1012,8 @@ footer {
       font-style: normal;
       font-size: 0.8rem; } }
 
-@media screen and (max-width: 425px) {
-  .frase_home {
-    height: 18rem; } }
+@media screen and (max-width: 530px) {
+  .equipo.home .row .person h4 {
+    height: 3rem; }
+  .equipo.home .row .person h3 {
+    height: 3.5rem; } }

@@ -133,6 +133,13 @@
                 font-family: $Inter;
                 font-weight: lighter;
                 padding: 0.5rem;
+                height: 1.5rem;
+                @include flex-row-center;
+            }
+
+            h3{
+                height: 2rem;
+                @include flex-row-center;
             }
         }
     }
