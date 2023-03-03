@@ -100,6 +100,7 @@
 
             &:hover{
                 figure{
+                    box-shadow: 0 0.5rem 1rem #0000003b;
                     img{
                         transform: scale(1.1, 1.1);
                     }

@@ -513,8 +513,10 @@ header .frase_header.p_cupcakes {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .container_venta .container_productos .product:hover figure img {
-        transform: scale(1.1, 1.1); }
+      .container_venta .container_productos .product:hover figure {
+        box-shadow: 0 0.5rem 1rem #0000003b; }
+        .container_venta .container_productos .product:hover figure img {
+          transform: scale(1.1, 1.1); }
       .container_venta .container_productos .product figure {
         width: 90%;
         margin-top: 0.5rem;
