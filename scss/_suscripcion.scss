@@ -1,8 +1,8 @@
 .suscripcion{
     background-image: url(../img/suscripcion.jpeg);
     @include bg-image(10rem);
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     @include flex-row-center;
 
     h3{
