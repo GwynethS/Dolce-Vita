@@ -61,18 +61,15 @@
         margin-top: 2rem;
 
         .person{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column-center;
             border: solid 2px $fondo_servicios;
 
             .tarjeta{
                 img{
                     margin-top: 1rem;
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.5rem;
                     width: 12rem;
                     height: 15rem;
-                    margin: 0.5rem auto;
                     border-radius: $borde_redondeado;
                     object-fit: cover;
                     box-shadow: 0 0 0.5rem #989898;
@@ -88,6 +85,7 @@
                     font-family: $Inter;
                     font-weight: lighter;
                     padding: 0.5rem;
+                    margin: 0;
                 }
             }
 

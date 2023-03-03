@@ -363,10 +363,9 @@ header .frase_header.p_cupcakes {
     border: solid 2px #CFA89D; }
     .equipo.nosotros .row .person .tarjeta img {
       margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       width: 12rem;
       height: 15rem;
-      margin: 0.5rem auto;
       border-radius: 0.5rem;
       object-fit: cover;
       box-shadow: 0 0 0.5rem #989898; }
@@ -377,7 +376,8 @@ header .frase_header.p_cupcakes {
       color: #4F4F4F;
       font-family: "Inter", sans-serif;
       font-weight: lighter;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      margin: 0; }
     .equipo.nosotros .row .person .info {
       width: 100%;
       background-color: #e8c9c0c6;
@@ -815,7 +815,8 @@ footer {
       .equipo.nosotros .row .person.chef .info p {
         margin: 1rem; }
   .equipo.nosotros .row .person.asist {
-    border-radius: 0.5rem; }
+    border-radius: 0.5rem;
+    margin-bottom: 0; }
     .equipo.nosotros .row .person.asist .tarjeta h3 {
       margin-bottom: 1rem; }
     .equipo.nosotros .row .person.asist .info {
