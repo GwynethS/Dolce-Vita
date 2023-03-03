@@ -1,3 +1,13 @@
+@media screen and (max-width: 450px)
+{
+    .container_productos{
+        @include flex-column-center;
+        .product{
+            width: 75%;
+        }
+    }
+}
+
 @media screen and (max-width: 400px)
 {
     .frase_home{
