@@ -220,7 +220,7 @@ header .frase_header.p_cupcakes {
 .frase_home {
   background-image: url(../img/tabla_madera.jpeg);
   width: 95%;
-  height: 10rem;
+  height: 13rem;
   border-radius: 0.5rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -236,13 +236,14 @@ header .frase_header.p_cupcakes {
     font-style: italic;
     font-weight: lighter;
     text-align: center;
+    line-height: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 65%;
     padding: 0.5rem;
     margin-bottom: 0;
-    background-color: #030303b9;
+    background-color: #030303d7;
     border-radius: 0.5rem; }
 
 .servicios {
@@ -747,7 +748,9 @@ footer {
     width: 10rem;
     height: 12rem; }
   .frase_home {
-    height: 11rem; }
+    height: 16rem; }
+    .frase_home h2 {
+      width: 80%; }
   .servicios .tarjeta.cardd {
     border: solid 2.5px #CFA89D;
     background-color: white; }
@@ -929,7 +932,9 @@ footer {
     width: 7rem;
     height: 9rem; }
   .frase_home {
-    height: 15rem; }
+    height: 18rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
   .servicios .tarjeta.delivery {
     background-color: white; }
   .servicios .tarjeta.cardd {
