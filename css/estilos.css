@@ -939,11 +939,21 @@ footer {
         font-size: 0.9rem; } }
 
 @media screen and (max-width: 576px) {
-  .categorias .row .categorie figure img {
-    width: 7rem;
-    height: 9rem; }
+  h1 {
+    font-size: 1.5rem; }
+  h2 {
+    font-size: 1.3rem; }
+  h3 {
+    font-size: 1.1rem; }
+  h4 {
+    font-size: 1rem; }
+  .categorias .row .categorie figure {
+    border-radius: 50%; }
+    .categorias .row .categorie figure img {
+      width: 6rem;
+      height: 6rem; }
   .frase_home {
-    height: 18rem;
+    height: 13rem;
     margin-top: 2rem;
     margin-bottom: 2rem; }
   .servicios .tarjeta.delivery {
@@ -1014,8 +1024,6 @@ footer {
       font-style: normal;
       font-size: 0.8rem; } }
 
-@media screen and (max-width: 530px) {
-  .equipo.home .row .person h4 {
-    height: 3rem; }
-  .equipo.home .row .person h3 {
-    height: 3.5rem; } }
+@media screen and (max-width: 400px) {
+  .frase_home {
+    height: 17rem; } }

@@ -1,15 +1,6 @@
-@media screen and (max-width: 530px)
+@media screen and (max-width: 400px)
 {
-    .equipo.home{
-        .row{
-            .person{
-                h4{
-                    height: 3rem;
-                }
-                h3{
-                    height: 3.5rem;
-                }
-            }
-        }
+    .frase_home{
+        height: 17rem;
     }
 }

@@ -1,11 +1,29 @@
 @media screen and (max-width: 576px){
+
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    h2{
+        font-size: 1.3rem;
+    }
+    
+    h3{
+        font-size: 1.1rem;
+    }
+    
+    h4{
+        font-size: 1rem;
+    }
+
     .categorias{
         .row{
             .categorie{
                 figure{
+                    border-radius: 50%;
                     img{
-                        width: 7rem;
-                        height: 9rem;
+                        width: 6rem;
+                        height: 6rem;
                     }
                 }
             }
@@ -13,7 +31,7 @@
     }
 
     .frase_home{
-        height: 18rem;
+        height: 13rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
