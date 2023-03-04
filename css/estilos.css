@@ -745,7 +745,7 @@ footer {
     header nav .menu {
       display: none; }
   header .frase_header {
-    height: 32rem; }
+    height: 27rem; }
     header .frase_header h1 {
       font-size: 1.7rem; }
   header .frase_header.home h1 {
@@ -753,16 +753,24 @@ footer {
     width: 16rem; }
   header .frase_header.nosotros h1 {
     height: 2.7rem;
-    width: 12rem; }
+    width: 12rem;
+    margin-top: 7rem;
+    margin-bottom: 0; }
   header .frase_header.contactanos h1 {
     height: 2.7rem;
-    width: 12rem; }
+    width: 12rem;
+    margin-top: 7rem;
+    margin-bottom: 0; }
   header .frase_header.p_tortas h1 {
     height: 2.7rem;
-    width: 12rem; }
+    width: 12rem;
+    margin-top: 7rem;
+    margin-bottom: 0; }
   header .frase_header.p_cupcakes h1 {
     height: 2.7rem;
-    width: 12rem; }
+    width: 12rem;
+    margin-top: 7rem;
+    margin-bottom: 0; }
   .categorias .row .categorie figure img {
     width: 10rem;
     height: 12rem; }
