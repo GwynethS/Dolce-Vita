@@ -834,7 +834,9 @@ footer {
       .equipo.nosotros .row .person.asist .info p {
         margin: 1rem; }
   .contactanos .informacion h2 {
-    margin-top: 1rem; }
+    margin-top: 2rem; }
+  .contactanos .informacion ul {
+    margin: 0; }
   .container_venta .filtro {
     display: none; }
   .container_venta .side_filter #filtrar_button {
