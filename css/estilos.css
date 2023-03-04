@@ -427,6 +427,7 @@ header .frase_header.p_cupcakes {
       font-weight: 600;
       color: white;
       background-color: black;
+      border: solid 2px black;
       padding: 0.2rem;
       font-size: 0.75rem;
       width: 5.5rem;
@@ -544,6 +545,7 @@ header .frase_header.p_cupcakes {
           font-weight: 600;
           color: white;
           background-color: black;
+          border: solid 2px black;
           padding: 0.2rem;
           font-size: 0.75rem;
           width: 9rem;
@@ -609,6 +611,7 @@ header .frase_header.p_cupcakes {
       font-weight: 600;
       color: white;
       background-color: black;
+      border: solid 2px black;
       padding: 0.2rem;
       font-size: 0.75rem;
       width: 5.5rem; }
