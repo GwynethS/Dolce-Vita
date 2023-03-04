@@ -411,17 +411,20 @@ header .frase_header.p_cupcakes {
       font-family: "Inter", sans-serif;
       background-color: #EEEEEE;
       border: none;
-      height: 2.5rem; }
+      height: 2.5rem;
+      padding: 0.5rem; }
     .contactanos .formulario form #email {
       font-family: "Inter", sans-serif;
       background-color: #EEEEEE;
       border: none;
-      height: 2.5rem; }
+      height: 2.5rem;
+      padding: 0.5rem; }
     .contactanos .formulario form #comentario {
       font-family: "Inter", sans-serif;
       background-color: #EEEEEE;
       border: none;
-      resize: none; }
+      resize: none;
+      padding: 0.5rem; }
     .contactanos .formulario form #enviar_button {
       font-family: "Inter", sans-serif;
       font-weight: 600;

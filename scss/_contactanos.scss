@@ -18,16 +18,19 @@
             #nombre{
                 @include input-style($Inter);
                 height: 2.5rem;
+                padding: 0.5rem;
             }
 
             #email{
                 @include input-style($Inter);
                 height: 2.5rem;
+                padding: 0.5rem;
             }
 
             #comentario{
                 @include input-style($Inter);
                 resize: none;
+                padding: 0.5rem;
             }
 
             #enviar_button{
